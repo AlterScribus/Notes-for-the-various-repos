@@ -1,0 +1,26 @@
+commit 016a998227b6bdf4c6c71422dfd5bed6dda17b5b
+Merge: 3aedc85 25152f4
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Wed Jan 29 11:01:33 2014 +0100
+
+    Merge branch 'footnotes_fix' of www1.scribus.net:/scribus into footnotes_fix
+
+commit 3aedc8516e0d762a71373ff3c7b5974c1ed255e2
+Merge: 008e09f cb08c9e
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Wed Jan 29 10:59:47 2014 +0100
+
+    SVN sync
+
+commit 8c71bd7dd2863fb7e5ba0c0af2a6f73704639369
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Fri Nov 8 00:01:43 2013 +0100
+
+    Fix for crash on deleting whole notesFrame.
+
+commit abdd2e48bbf81556901f038ba55cfde23315d8f8
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sat Oct 26 19:32:23 2013 +0200
+
+    Fix for resolving page number in cross references in format according to
+    section numbering setting.
