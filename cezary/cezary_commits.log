@@ -1,0 +1,147 @@
+commit c76e0a90af7668e8f301b12af57a1616d46b0881
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sat Feb 1 12:28:03 2014 +0100
+
+    Back to deleting PARSEP with paragraph.
+
+commit 76c54a1b063b07b809475dda7a0afb685897533d
+Merge: 0f1bef1 016a998
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Wed Jan 29 13:12:24 2014 +0100
+
+    SVN nad footnotes_fix update
+
+commit 016a998227b6bdf4c6c71422dfd5bed6dda17b5b
+Merge: 3aedc85 25152f4
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Wed Jan 29 11:01:33 2014 +0100
+
+    Merge branch 'footnotes_fix' of www1.scribus.net:/scribus into footnotes_fix
+
+commit 3aedc8516e0d762a71373ff3c7b5974c1ed255e2
+Merge: 008e09f cb08c9e
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Wed Jan 29 10:59:47 2014 +0100
+
+    SVN sync
+
+commit 0f1bef1e9908b8360fa76dfe43c6c8ee3c68d07d
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Wed Dec 18 09:03:40 2013 +0100
+
+    Includes
+
+commit 36f00821f530f1a3861fbe7c64b272b1d7047fd7
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sun Dec 8 17:43:20 2013 +0100
+
+    cmake
+
+commit 1a9972b1739424d6367961823584c2c5ab679278
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sun Dec 8 17:20:41 2013 +0100
+
+    Fix for layout text.
+
+commit 5527010bc5bb00a5fc350a5c8241b92cc4bee64a
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sun Dec 8 14:48:01 2013 +0100
+
+    Fix forenabling tabs in PP after empty selection.
+
+commit 00a58e06944d1aa494565504cdb26f914e15d66f
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sun Dec 8 12:32:20 2013 +0100
+
+    Small fixes in PP UI. Fix for selecting PP tab on selecting items.
+
+commit f99ec66174c19a7408543db60c9ae1c011de8b33
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sun Dec 8 12:31:30 2013 +0100
+
+    Fix includes.
+
+commit 4a4fcd2437b0390606339aed44dee519bee57cae
+Merge: d84444e 80cf1dd
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sun Dec 8 12:30:45 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/CMakeLists.txt
+    	Scribus/scribus/scribus.cpp
+
+commit 8c71bd7dd2863fb7e5ba0c0af2a6f73704639369
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Fri Nov 8 00:01:43 2013 +0100
+
+    Fix for crash on deleting whole notesFrame.
+
+commit abdd2e48bbf81556901f038ba55cfde23315d8f8
+Author: Cezary ECE Grabski <cezaryece@gmail.com>
+Date:   Sat Oct 26 19:32:23 2013 +0200
+
+    Fix for resolving page number in cross references in format according to
+    section numbering setting.
+
+commit f87a1095d9e369c913225ba2e0a79784965889c2
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Sun May 5 16:58:58 2013 +0200
+
+    Fix for widows/orphans control in columns.
+
+commit a51c835c7536d447d80556f15b16e4b36b243348
+Author: Cezary Grabski <czarek@oferuje.pl>
+Date:   Sun May 5 16:57:46 2013 +0200
+
+    Fix for styles reading for faulty assigning of shortcuts to other
+    styles.
+
+commit 325db7c850ddefbf89ed5861cc545369073e01f1
+Merge: 8e7bf33 788197e
+Author: Cezary Grabski <cezaryece@scribusece.info>
+Date:   Tue Apr 30 16:17:59 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/plugins/import/wmf/wmfimportplugin.cpp
+
+commit ef5f8aa0311ac985a973b1c84d550a41166a203a
+Merge: bb35f09 baa84d3
+Author: Cezary Grabski <czarek@eee901.(none)>
+Date:   Sat Apr 13 12:26:26 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit bb35f09630404f3470a5c640b42ab4ace1211796
+Author: Cezary Grabski <czarek@eee901.(none)>
+Date:   Sat Apr 13 12:20:59 2013 +0200
+
+    Fixes for TableOfContent
+
+commit a691cc80a4e5ff53fc484c14d7308ce4d9d835ef
+Author: Cezary Grabski <czarek@eee901.(none)>
+Date:   Sat Apr 13 12:19:18 2013 +0200
+
+    SearchReplaceDialog fixes.
+
+commit 58d3995a40e959d44a8fb8f1be0f04a3f703bad3
+Merge: 6c4907d 8ee9184
+Author: Cezary Grabski <czarek@eee.(none)>
+Date:   Sun Mar 17 09:38:14 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit aadffe4793b3380bd1c7965b21d7d414726e36c9
+Author: Cezary Grabski <czarek@eee.(none)>
+Date:   Wed Sep 5 19:06:21 2012 +0200
+
+    updating
+
+commit 6fe3fa794b274ca24da97240d52ea423131eab5d
+Author: Cezary Grabski <czarek@czarek.(none)>
+Date:   Fri Jun 1 10:19:19 2012 +0200
+
+    Footnotes feature initial commit
