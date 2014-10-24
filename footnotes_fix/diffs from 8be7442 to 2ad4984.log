@@ -1,3 +1,20 @@
+Merged diffs  from 8be7442 to 2ad4984.log (7 & 8 nov 2013) :
+* Further work on updating notes numbers on undo/redo
+* Ensure invalidation for item where mark was deleted.
+* Fix clearing some flags on updating view in MarksManager.
+* Always invalidate master frame while deleteing notes.
+* Add regionsChanged for better refresh of view content after undoing
+changes in notes.
+* Convert PageItem_NoteFrame::deleteIt to private with public
+getter/setter.
+* Remove unnecessary call of removeNoteFrame and refactoring name to
+removeNoteFrameFromMap
+* Fix for crash on deleting whole notesFrame.
+* Fix previous commit
+* Fix crash after deleting noteFrame.
+* Fix for update numbers of notes.
+
+
 diff --git a/8be7442 b/2ad4984
 index 8be7442..2ad4984 100644
 --- a/8be7442
