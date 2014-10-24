@@ -13,5 +13,6 @@ git checkout footnotes_fix
 
 Related bugs on mantis are in the "contributor's project" :
 * http://bugs.scribus.net/view.php?id=10983 : Delete text doesnt update display (fixed in footnotes branch)
-* http://bugs.scribus.net/view.php?id=11003 : crash when editing notenumber reminder in note
+* http://bugs.scribus.net/view.php?id=11003 : Crash when editing notenumber reminder in note (fixed in footnotes branch)
+* http://bugs.scribus.net/view.php?id=11837 : Crash when deleteing text of 2 footnotes at once (NOT fixed)
 * and more...
