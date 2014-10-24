@@ -72,11 +72,269 @@ Date:   Sun Dec 8 12:30:45 2013 +0100
     	Scribus/scribus/CMakeLists.txt
     	Scribus/scribus/scribus.cpp
 
+commit 25152f43d3e31074aa8d1bafd2505f01b8ecc25e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 15 15:47:54 2013 +0100
+
+    Further fixes
+
+commit 17fbc3286daa1d8bf72fbc05fd10d04538621a64
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 15:48:21 2013 +0100
+
+    Fix for cutting text with notes marks in noteframe.
+
+commit 85afcb3e637f3515c8ab6b1992c179a86ad76cdd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 15:24:44 2013 +0100
+
+    Fix for undo for notes and applying character style to notes marks and
+    whole noteframe.
+
+commit 9a01568a8d0b6d6f6c0c4d69ee1cfc603c84aaa0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 15:19:40 2013 +0100
+
+    Small fix for starnge problem while changing edited item by mouse click.
+
+commit 28b8058368d67a9e84d02302cb20e6962b26c25b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 09:57:01 2013 +0100
+
+    Fix for applying neighbour charstyle for inserted marks.
+
+commit 6fa65065ea639c9281854de77424134f1f8f3391
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 09:49:50 2013 +0100
+
+    Fix for saving and resotring characterStyle for note`s marks
+
+commit 7074f321a0ada2f2099bf6bc98ec797bd66c8866
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 13 16:03:33 2013 +0100
+
+    Try to fix restore charstyle of note mark on undo deleting note.
+    Fix for deleting notes in linked text frames.
+
+commit b5d0a62d5ef338147ece7d5f6db49b2b4083e4ad
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 13 16:02:00 2013 +0100
+
+    Grouping decalration of undo functions for notes and marks.
+
+commit dead5c2733eccce74933cc301b617f807b867b3f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 15:46:32 2013 +0100
+
+    Fix for setting number for notes marks in noteframe.
+
+commit 9ad574de153731692e52d44250f4958e2c31abcd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 15:45:42 2013 +0100
+
+    Fix for wriong calculation of selection.
+
+commit 91132746ffbd07b729e4b6f63148c6012b88d3da
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 15:45:05 2013 +0100
+
+    Small improvements in code
+
+commit dd28df1e27e9859b38e517334ffe00c23cd3df5f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 09:46:03 2013 +0100
+
+    Remove notes in reverse order on deleting note frame.
+
+commit aafd83166d84c1587cac9911511167ddb481459b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 08:42:05 2013 +0100
+
+    Fix for undo/redo deleting note mark. Removing some debug messages.
+
+commit 46d29f5a7ece1f92326bc0b4901e19b5e23df8bd
+Merge: 13af8f1 8fe4074
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 07:41:38 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 13af8f1669e4fdbf8e4474f03e73f7e76fc73bd9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:49:43 2013 +0100
+
+    Further work on updating notes numbers on undo/redo
+
+commit 741599e0c278e01cfc51f5c8a811645ddd7f6502
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:24:30 2013 +0100
+
+    Ensure invalidation for item where mark was deleted.
+
+commit bda24a416faf4f304c456d57ffef7592322ee3b3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:17:00 2013 +0100
+
+    Fix clearing some flags on updating view in MarksManager.
+
+commit 3f51fc4a60ea7ac817e058f46e558d5094594708
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:16:22 2013 +0100
+
+    Always invalidate master frame while deleteing notes.
+
+commit d109550e9f025202bb62fc63533ac76083f22ea9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 13:44:37 2013 +0100
+
+    Add regionsChanged for better refresh of view content after undoing
+    changes in notes.
+
+commit 688eb935c6b759f8c7d4fa5321c2df957318d170
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 12:19:27 2013 +0100
+
+    Convert PageItem_NoteFrame::deleteIt to private with public
+    getter/setter.
+
+commit 0f60c4d7066d83b433c82f7ad252b5c383e6f0af
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 12:12:55 2013 +0100
+
+    Remove unnecessary call of removeNoteFrame and refactoring name to
+    removeNoteFrameFromMap
+
 commit 8c71bd7dd2863fb7e5ba0c0af2a6f73704639369
 Author: Cezary ECE Grabski <cezaryece@gmail.com>
 Date:   Fri Nov 8 00:01:43 2013 +0100
 
     Fix for crash on deleting whole notesFrame.
+
+commit e2db43f60a4a0acd9411b5f5649fd029da1fe39e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 15:59:02 2013 +0100
+
+    Fix previous commit
+
+commit e6c254267bdcb25cf1dfec523b78487e4a4999bf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 15:58:19 2013 +0100
+
+    Fix crash after deleting noteFrame.
+
+commit ca9c117c102f8b54ba14993adf28a644f3a1f85c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 15:25:48 2013 +0100
+
+    Fix for update numbers of notes.
+
+commit d84444eece6d2b4b2a3fe361f327c2000339be3d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 12:10:04 2013 +0100
+
+    Fix for delete PARSEP if whole paragraph is deleted.
+
+commit 008e09f757b70566bb15a1b81382b01c24224e35
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 6 16:00:40 2013 +0100
+
+    Update of labels of notes marks.
+
+commit 33ba3ec25469501cbae8b22ef9900bb4e82b80fc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 6 15:50:40 2013 +0100
+
+    Further work on fixing deleting marks, specially notes marks. Some
+    refactoring of mark data representation and access to it.
+
+commit 71632d6523c0a2284b0eacfd398c4a39ebb9473c
+Merge: dcf7369 c28253c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 6 07:44:18 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit dcf736971c79fac4ec071b8dd112b7f52e09eb71
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 15:33:20 2013 +0100
+
+    Refactoring all data in Mark class as protected with public
+    setters/getters.
+
+commit f21a8744c9f269e6bab8de3523b76b74f937baa6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 13:27:13 2013 +0100
+
+    Fix for placing cursor after note recall in noteframe. Fix for undo
+    deleting list marks.
+
+commit 3a639df05c927e69719578fbff8c4af43a5b78a2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 12:07:21 2013 +0100
+
+    Fix for undo deleting text with marks. Refactoring code for undo marks,
+    remove of unused already ScItemsState class.
+
+commit 2d536cde94034491982f262e466a9a1a821ad2c9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:43:07 2013 +0100
+
+    In undo state save item name from getUName()
+
+commit ef1e4dd012e5c875d6e971c7204e587a37e15e72
+Merge: 5a37575 379e702
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:13:56 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 5a3757559f7448dfebd00a9b5acdf12f472345e9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:11:37 2013 +0100
+
+    Refacotirn some names in Mark class for better understanding of its
+    role.
+
+commit aeb97d550c0e8abc14cb2bb62d1744d184c797d0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:10:08 2013 +0100
+
+    Changing action od dblclick on mark in Marks Manager - for unique marks
+    go to it, for non-unique edit it.
+
+commit 9bd74bc391494624a57cf4f1025ba85d21395db8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 29 15:56:32 2013 +0100
+
+    Try to fix undo for inserting, copying marks.
+
+commit befdf70bae84583b4f32897a3e654ca2d04878a6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 29 09:38:15 2013 +0100
+
+    Fix for copying with text also a character styles assigned to marks
+    (BTW to other special chars too, like for page numbers)
+
+commit 28d6ffb6683e03a050a35fe7e591e579e5e904b2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 28 15:37:02 2013 +0100
+
+    Fix for adjusting size of Paragraph Effects tab while it change its
+    content.
+
+commit 2a2430fe16a4dab6b7e2b426a014d2dbc3b446c0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 28 14:41:05 2013 +0100
+
+    Fix for marks - save character style for mark in text. Font selected in
+    Character Palette is used as bullet font.
+
+commit 46692250f119cdc3f8f7fc3f5002ee437008a54b
+Merge: abdd2e4 f7c0714
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 28 08:55:41 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
 
 commit abdd2e48bbf81556901f038ba55cfde23315d8f8
 Author: Cezary ECE Grabski <cezaryece@gmail.com>
@@ -84,6 +342,984 @@ Date:   Sat Oct 26 19:32:23 2013 +0200
 
     Fix for resolving page number in cross references in format according to
     section numbering setting.
+
+commit a25cce232b5a3cb31a901c30a6f8c7a0ada8854d
+Merge: 11458d8 7be4a33
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 14:36:10 2013 +0200
+
+    Merge branch 'ece15' of ssh://oferuje.pl:22789/home/git/ece15 into ece15
+
+commit 0daa9e64a733cbbf5d0b93b760fca6b5f25382c8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 14:29:01 2013 +0200
+
+    Fix unfinished code - SotryText::findParagraphEnd function
+
+commit 7be4a3313cddedcf795c5520abef5010a9c43872
+Merge: 64ffc56 7560d62
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 14:24:17 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/ui/inlinepalette.cpp
+
+commit 64ffc56a7e56c1ffc1bfa7616b71e5ec986185f0
+Merge: 266fda6 c6d3759
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 14:18:26 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/CMakeLists.txt
+    	Scribus/scribus/notesstyles.cpp
+    	Scribus/scribus/notesstyles.h
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_noteframe.h
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusdoc.h
+    	Scribus/scribus/text/storytext.cpp
+    	Scribus/scribus/text/storytext.h
+    	Scribus/scribus/util_text.cpp
+    	Scribus/scribus/util_text.h
+
+commit 7560d6246dad1f9f5053962520f565eb8e8674ba
+Merge: a3750e8 7c9d938
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 13:37:08 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit a3750e8a4e8a4ea7d741c640e3a0aa09b677d083
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 13:36:18 2013 +0200
+
+    Fix undo/redo for deleting text - deleting notes, deleting text with
+    numbered or bulleted list, restore paragraphStyle
+
+commit 0f387b05dcf881931a6a6422e26808c8017cb3a1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 13:33:49 2013 +0200
+
+    Better calculate changed region after NoteFrame layout.
+
+commit 138b9ab682d861964f76b21f07da5fe5be8c4fd0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 07:58:04 2013 +0200
+
+    Dont create undo state for moving items welded to given. Dont commit
+    empty transaction on moving welded items.
+
+commit 266fda6db1cbd81bca12899e8b209cbd3cdc5279
+Merge: cbc1999 68f781f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 15:11:46 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.cpp
+
+commit c6d3759bc185fc25be6b44b7a6a703aa9f7af551
+Merge: 2c832b4 68f781f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 15:10:19 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 2c832b4a9a7e86a3aa2a4f26b0b26d21347e0833
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 14:52:25 2013 +0200
+
+    Another fix on checking text interactions with notesFrames and update
+    linked frames.
+
+commit e9b301eead4e21821dba22dbdbc78c6ca261516f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 14:15:47 2013 +0200
+
+    Fix deleting notesframes with master frame, with fix of update of linked
+    frames after deleting one.
+
+commit f6bbd196052ee73c6a4b964b26a46ae599f769b5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:36:03 2013 +0200
+
+    Fix for removing marks for lists from text. Refactoring some names.
+
+commit b59ba9c1640f17f9b5c4e85c2a231ac6927974e3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:34:54 2013 +0200
+
+    Assertion on setting marks pointer to null in TextNote class object.
+
+commit 5ce9f1e0ebf85badbbc97f346dca9a4bda42197c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:33:57 2013 +0200
+
+    Dont weld autodeleted notes frames. Dont save undo if welding for them.
+
+commit 0e1a74f69c6c3038f413ae8c7d8e5b9a8050f2fd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:31:41 2013 +0200
+
+    Fix for removing marks on deleting frame in chain. Fix for droping
+    noteframe mark pointer in note object.
+
+commit 9c343e7730200d309daf012a909fdc3e23242630
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:30:08 2013 +0200
+
+    Updae mark OwnPage.
+
+commit 83786bc56b2456bcbaf0969bfaacc367eefcd20a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 23 14:20:25 2013 +0200
+
+    Disable DropCaps in noteframe. Fix for renumbering notes after inserting
+    new one. Further refactoring arguments in functions.
+
+commit 2790f4763b705d1b6f89a40474d9f8e45718d57a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 23 10:14:43 2013 +0200
+
+    Change of way of passing string to desaxeStoryFromString (now by
+    reference).
+
+commit 11458d80144742b1727e01801ba4915562f9f68c
+Merge: 8db8180 b232bf7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 22 15:46:28 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 431045e01c5f78bc7be1664e036e4762c5e11bab
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 22 15:44:01 2013 +0200
+
+    Massive reafctoring of parameters in marks and notes functions.
+
+commit cbc19991d31949a18437061477e9695eed75adf3
+Merge: 8db8180 b232bf7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 22 09:56:17 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 68fe057231dca5f87fb9887504e08ea2b909a1ea
+Merge: 25cb13e b232bf7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 22 09:54:51 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 8db818069fedee75df7e5300298c520861f29bb5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 21 12:47:57 2013 +0200
+
+    Fix auto-height of texdt frames
+    Fix type mistake in layout()
+
+commit f7c567c1d1d1b086e5037811ea4c446e8e61b8e8
+Merge: 0a4db45 1fbeb18
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 21 09:33:16 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 0a4db452ae18b8a0c8b8d87d4cbc260cc6471d9b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 21 09:30:14 2013 +0200
+
+    Removing textLen field from TextNote. refactorin funcktion names in
+    util_text.
+
+commit 25cb13e180be535d0ac1a43571eedb2dba949c52
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 21 08:55:04 2013 +0200
+
+    Remove textLen from TextNote as it must be calculated only in one place.
+    Refactoring names of saxing/desaxing functions in util_text.
+
+commit d9acd17ae2ef05c2c1c38afdde4cee8b0b19f881
+Merge: 6b4f347 491b41c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 21 08:39:56 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 491b41c71e20b37d4651ab0c44fbb9ad1e4981a5
+Author: cezaryece <cezaryece@gmail.com>
+Date:   Sat Oct 19 16:56:19 2013 +0200
+
+    fix for crash while deleting note
+
+commit 431029f30c705eece5742bdbb862a0247cf84d7e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 18 15:46:52 2013 +0200
+
+    Enabling list in notesframes. Fix for updating numbers of notes.
+
+commit 2797c326cd289764bf2114f8a558a7accb69754f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 18 10:01:47 2013 +0200
+
+    Fix for updating notes numbers.
+    Relayout text frame by jump not by recursive call.
+
+commit 6b4f3479bc0379499483a79e1e181816a2cea6c7
+Merge: 49fdd4e 3928b2d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 15:45:44 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/util_text.cpp
+
+commit b8beb663f1eebf68a2fab6c5fdfe1153da6e4077
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 14:14:15 2013 +0200
+
+    Remove commented code, uncomment set ETA for undo of deleting note
+
+commit 3928b2da09e6de51861de441d8e7d6e7b55be92c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 14:11:36 2013 +0200
+
+    Remove unused includes.
+
+commit 72e1b756195c22e5b752422e4f943a43061979d2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 13:59:01 2013 +0200
+
+    Fix preparing saxed string for Serializer.
+
+commit 49fdd4e29f237baf828ed3371e593bf452043308
+Merge: f76e08b b7c9b09
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 16 15:19:27 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/marks.h
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/pageitem_textframe.h
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/sctextstruct.h
+    	Scribus/scribus/text/storytext.cpp
+    	Scribus/scribus/text/storytext.h
+
+commit a09281e76b574a446c05ca00d5a2b618155a4f8c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 16 12:30:09 2013 +0200
+
+    Small refactoring and unding code differences with svn
+
+commit ccbcd5f9dccd6fee34ee8a14655b3210c00e2fe3
+Merge: b7c9b09 e259128
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 16 07:32:12 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit f76e08bdcc2608ca4c669b0bb5a4257a507be01d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 15 10:20:41 2013 +0200
+
+    Add serializer reset
+
+commit ef49c734b159bf8bc09d508ca30797e51fc21e77
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 15 10:17:53 2013 +0200
+
+    removing wrong assigment in pfdlib_core
+
+commit b7c9b09dbf55cdbed8fa90bd8df22f9f4bfd0f09
+Merge: c7d31b2 a18a770
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 15 10:07:17 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 76bd104672874b035c095d99531f723f26a57aa7
+Merge: cbc7fbd a18a770
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 15 07:53:36 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+
+commit cbc7fbd59d4648d02f4eae6327818d9f1027fc27
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 14 12:49:41 2013 +0200
+
+    Cropping images in PDF output to the part visible in frame.
+
+commit 745a11e3ed2478e40b8a260b4cbc0fe220446280
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 14 10:12:58 2013 +0200
+
+    Remove problematic OMP paralelization.
+
+commit ffaa2bfa545bd950de671435893584ed07ba34fd
+Merge: 27654e1 e38f048
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 14 09:38:51 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/text/storytext.cpp
+
+commit c7d31b2da2a084046cbc50ce8248baac675ddce6
+Merge: 5252212 e38f048
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 14 09:33:43 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 27654e15bf017249a3b8f34f8c752085e0189730
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 15:33:09 2013 +0200
+
+    try to add OpenMP to CMake build
+
+commit 525221282a6b785cf1b98733eb0700bcf6e0bcf8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 14:48:52 2013 +0200
+
+    Fix crash on deleting marks after Avox patch making ScText private.
+    Fix for update after deleting notes.
+    BTW fix for wrong disabling undo in few places, as undo should be
+    strictly disabled and then enabled, as twice disabling undo broke its
+    state stack.
+
+commit 8146966acfb92471061bd39008a8d9f11b875fba
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 11:19:26 2013 +0200
+
+    Better name for PageItem_TextFrame::selectedNoteMark - refactoring to
+    PageItem_TextFrame::noteFromSelectedNoteMark
+
+commit ea4e1a6832999a74b574b87e7c43c9259c8ca074
+Merge: 517b8e1 6727d27
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 10:32:36 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit ce92bfb81263675f8c44298995778d5459751e17
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 10 15:51:52 2013 +0200
+
+    Fix superscript applying to notesmarks
+
+commit 517b8e10aa3dd27f2b69a0fc9b07713f7dc7bce8
+Merge: 66f5e35 85d0845
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 10 11:25:33 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit b72a92990f0a0a522f453cc3c8c7700c942406dc
+Merge: 0583b33 85d0845
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 10 07:30:35 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 0583b33b538f632df8f8b95753a445c31ee6c04f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 9 15:43:55 2013 +0200
+
+    fix in PP
+
+commit c09b44232e22503b3d1cceaa414e968d2d5f150e
+Merge: d35db12 cae8baf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 9 15:36:57 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_pathtext.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/pageitem_textframe.h
+    
+    Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/contextmenu.cpp
+    	Scribus/scribus/ui/propertiespalette.cpp
+    	Scribus/scribus/ui/smpstylewidget.cpp
+    	Scribus/scribus/ui/smpstylewidget.ui
+    	Scribus/scribus/ui/smtextstyles.cpp
+
+commit 66f5e35ced2c388132072841c38c70fa383c36d0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 8 15:52:51 2013 +0200
+
+    further fixes
+
+commit d35db124a18614d1cf0117689e85d32ad6fac84f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 8 15:08:55 2013 +0200
+
+    Pararel color computation on changing color profiles or previre mode.
+
+commit fb90d4cd5e503449eca9d3bcfe63986c0fce18e3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 8 15:06:17 2013 +0200
+
+    Fix for applying neighbour style near note mark (and also bullets), dont
+    apply insert character before note mark.
+
+commit 21e0bf1ca62b95972a322d58ac0b12b054b6ad39
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 8 15:04:32 2013 +0200
+
+    Fix for calculating columns from 0, not from 1
+
+commit c252d9da1d128a710171cbb9b8d2512513dc5797
+Author: cezaryece <cezaryece@gmail.com>
+Date:   Tue Oct 8 07:31:38 2013 +0200
+
+    fix for applying notes mark charstyle to next inserted char
+
+commit df4b5d8aad65d5cf9502cce970eeadf29622f95b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 7 15:52:49 2013 +0200
+
+    Try to fix crashes with desaxing notes
+
+commit 4a733faa9a6856e9df5b29b2f4a28748e1c3fac3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 4 15:47:48 2013 +0200
+
+    Fix for CharStyle combo for para effects in Style manager
+    Try to fix bolfing labels for noninherited properties.
+
+commit d49081886ae8b738d2a47b834c02efd719b99ea9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 4 10:56:57 2013 +0200
+
+    Small changes in PP (imagebase, textbase)
+
+commit a440e2201a6c6b1b297b7efc008e0aa85e71bc2f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 4 10:56:09 2013 +0200
+
+    Removing problematic Printer setup in Preferences Dialog
+
+commit 1b5c97621b67e1321aabdbd127253f6738a46a41
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 4 09:30:53 2013 +0200
+
+    Fix for custom columns - columns start position with left text distance.
+
+commit 9deedaf26d6f1ab10da30d93dfe72f63a72a5692
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 4 09:08:01 2013 +0200
+
+    text frame layout - static_cast for ascents values
+
+commit 685c026e33a21ba98eae8e3fbc2a365811fb0d4b
+Merge: 16f6dc0 336755b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 4 08:42:21 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit 16f6dc0eea18c8945b6b930b1564070a2d0332da
+Merge: ddba49d fcf5b19
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 15:47:28 2013 +0200
+
+    Merge branch 'footnotes_fix' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit ddba49dd93430edf7246501691393e7cb024b033
+Merge: 671062c cf4239c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 15:45:59 2013 +0200
+
+    Merge branch 'footnotes_topLine' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/notesstyles.cpp
+    
+    Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/ui/notesstyleseditor.cpp
+
+commit 671062ccab7783265a6ee4130f0edce91e51cb10
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 15:41:50 2013 +0200
+
+    applyin some last patches
+
+commit 336755b79ae73ebdf7fef8f1e114ecb710d9ea5d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 13:00:20 2013 +0200
+
+    applying 11758 patch
+
+commit 6027e7e3cee54b9e137d4c03f120aea55e645c27
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 12:59:42 2013 +0200
+
+    applying 11613 patch
+
+commit cf4239cc13e9a39592b60f2f8a294c1dbea8aa39
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 12:29:31 2013 +0200
+
+    better syncing code with trunk
+
+commit 02fb8003437f4da6b6052a2744864da5a75d09ba
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 12:21:31 2013 +0200
+
+    removing commented code and unused variables
+
+commit 7d5d5a1725c1b0697323db147000e4fee3895dac
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 12:09:36 2013 +0200
+
+    Fix for rendering topLine into PDF
+
+commit fcf5b19c528f3b002570db7053d71e8536b30432
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 10:00:40 2013 +0200
+
+    Enabling local character styling for notemarks.
+    Fix for applying suoperscript effect to notemarks.
+    Fix for update noteframe if master frame change its size.
+
+commit 0c1f21698a1153f8ab341afe9e43303a05f1c1ba
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 1 15:53:47 2013 +0200
+
+    TopLine
+
+commit aa7e9709a3ce21a9801737d339d2e7cd4a8fa221
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 1 15:51:49 2013 +0200
+
+    Furtehr work on topLine for footnotesframe
+
+commit 53f778d4d21f4d92c562340848f5e53133c22806
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Dec 27 16:24:58 2012 +0100
+
+    Fix for crash with copy/delete text with footnotes marks which is not i
+    any frame (hidden in ocerloaded text)
+
+commit c63b0225f030bcacf87e539e4c16e23b8a91c2a8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 2 23:22:22 2013 +0200
+
+    Initial work on top line for noteframes
+
+commit 85c296ca14f314779bbdda425a20254f0607375c
+Merge: 8e4f8df 92696ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 30 10:04:53 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 8e4f8df9f146acfbe19940863b026e8a50b12c95
+Merge: 6a5023e d31e947
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 30 10:02:47 2013 +0200
+
+    Merge branch 'customColumns' into ece15
+
+commit d31e947928bf8af72670499d5645efb943fa4b1e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 27 15:59:52 2013 +0200
+
+    Custom Columns almost finished
+
+commit 6a5023e8068a0b57740c28434cc99df72bc98f14
+Merge: 0e1a6b7 54e3934
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 27 09:29:46 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 0e1a6b787f4ec43125bfc2fe53a1a1e984dca706
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 27 09:11:57 2013 +0200
+
+    Table support - add handling of pagging and applying text properties to
+    text in cells.
+
+commit 42f1fb82d4719e6c59f1053e9ab7de2116eafa62
+Merge: 3381dde 29a5483
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 26 08:24:58 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/resources/translations/CMakeLists.txt
+    	Scribus/scribus/CMakeLists.txt
+    	Scribus/scribus/actionmanager.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusdoc.h
+    	Scribus/scribus/ui/propertiespalette_xyz.cpp
+    
+    Change way of blocking signals in PP
+
+commit 5a15ede9d3bc305a40968c0fec25d5eecb20444f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Sep 25 08:36:55 2013 +0200
+
+    custom columns
+
+commit 3381ddeb5489d2cf36e657a4428b9b8f0300bdac
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Sep 17 13:11:28 2013 +0200
+
+    Further refactoring includes to forward declarations
+
+commit 134bf8207089b2ae9e308070ff234d1e2348454d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Sep 17 08:59:54 2013 +0200
+
+    Fix Scribus.pro - phonon and sql module are not used, phonon is not
+    avaiable in Qt5
+
+commit 2349aa84c892753f3aecdc5d58884f7fa61604c7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 16 15:42:45 2013 +0200
+
+    Switch tool to select mode when page is changed.
+
+commit cdb0699745df4df1171f875f5004690febbe0510
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 16 15:42:11 2013 +0200
+
+    Switch to normalMode when export dialogs are opened.
+
+commit 78e9f96ddcdb9e8787332328c532cec28eecc3e0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 16 14:57:31 2013 +0200
+
+    Moving includes to forward declarations
+
+commit 3d63537d95c115c1af15f3770c2b8d3ef14bcce7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 16 08:13:19 2013 +0200
+
+    Fix Scribus.pro
+
+commit d1016fd5f16eb9d231e219aa4d71d5e127367c49
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 16 08:02:32 2013 +0200
+
+    Refactorin field name in ContextMenu class
+
+commit 7255ea9d30a5e55b120e702f615a23d6aa2bc41a
+Merge: f82e55a e96008c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 16 07:46:34 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    
+    Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/scribusXml.cpp
+    	Scribus/scribus/ui/contextmenu.cpp
+
+commit f82e55a97d6f12937559b465c1d19b310d32c2a3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 13 14:29:55 2013 +0200
+
+    Fix for pasting items
+
+commit 420cb446b8fa5c5240193b54b22a58e4e52c5ab8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 13 14:29:20 2013 +0200
+
+    Try to fix starnge segfauolt with setting value 0 to ScrDblSpinBox
+
+commit 7d8a45bca3d99d5beac247e692da1b21aa67aede
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 13 14:28:34 2013 +0200
+
+    Removing unused QTimer variable
+
+commit 5656dec153981e1dfce6de00a02b04c6ba2778ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 13 14:27:28 2013 +0200
+
+    Changes in setHeight in TextFrame
+
+commit 2cba8c54f2661899d4163a07ac1f9be023f4c16a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 13 14:26:09 2013 +0200
+
+    Further changes to Qt5 migration
+
+commit 6eb24089894f5d6973fb73fa3b8fa5898954c554
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 9 13:03:42 2013 +0200
+
+    Textvalidator cmakelist change
+
+commit 6492a767964a1a200142f4b7ae8cf5977b5e2594
+Merge: 02586fc d847add
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 9 12:18:25 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 02586fcb238f306b96c158c481804f2312c641a3
+Merge: cc75b0c 0c314ad
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Sep 3 12:25:47 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit cc75b0c7835bacbed44bc86dfb0242502b3db1ba
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 29 11:44:01 2013 +0200
+
+    Faster update of Properties Palette after changin selection (fastering
+    text input and changing selection)
+
+commit a84378450e9c651a217dab8f1b1b1b4028866ca5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 29 09:46:37 2013 +0200
+
+    Fix for loading values for maxWordTracking and maxTracking from previous
+    Scribus versions.
+    Fix for default value for maxWordTracking.
+
+commit 60020403751a4138cd096dd8ade21baeab2d7bf4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 29 09:03:51 2013 +0200
+
+    Removing some unused testing code
+
+commit b9d7d693aee9a8d587064e6eaebc476194c6c1d3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 29 08:18:25 2013 +0200
+
+    correct mispelling mistake in variable name
+
+commit 4bcca34041d6e19155f244d44a50588188ab5f40
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 29 08:17:12 2013 +0200
+
+    Small change in autoheight function for text frames.
+    Removing test vesions of layout function.
+
+commit f8c4d87764acb08d76aa6a69010945f677559fd3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 29 08:04:04 2013 +0200
+
+    Refactoring comparingDouble back to original name
+
+commit e81521881892b7d6f4286458284aabbbf04f8f94
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 28 11:37:15 2013 +0200
+
+    reset win32 directory
+
+commit 99c6facd47173714534489e74c1c28f9486872e5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 28 11:36:46 2013 +0200
+
+    Fix for selecting paragraphs and deleting them
+
+commit 04f20590141fbef3d0721c8b33f430f4e6a37e42
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 28 09:52:17 2013 +0200
+
+    Refactoring m_Doc back to doc
+    Some indentation fixes (back to original)
+    Revert some changes in code
+
+commit be204daa0ec05fb80a8ee23475ebb6dffe25d914
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 28 09:18:59 2013 +0200
+
+    Fix for default value for Max Word Tracking (120).
+    Remove unwnated pro file.
+    Reuse pdfoptionsio.cpp in CMakeLists.txt
+
+commit 1a70dcf046d93a28cc002bf172d60864850eb343
+Merge: e5fd74d 339ba14
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 26 13:07:05 2013 +0200
+
+    SVN update
+
+commit e5fd74d422ab545e79e899384b6f95c24be420ab
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 13 10:05:15 2013 +0200
+
+    Merging SVN
+
+commit fe0488a2f6c33120fbf490281c57c8da18dc8330
+Merge: 9f57871 ec4d7af
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 24 14:38:23 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pdfoptionsio.cpp
+    
+    Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/plugins/scriptplugin/objpdffile.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/ui/tabpdfoptions.cpp
+    	Scribus/scribus/ui/tabpdfoptions.h
+
+commit 9f578713e68cabceda9af4714345477f1cd3cdfd
+Merge: d88e9b3 c8e2ae4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 8 11:16:11 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit d88e9b32f9fdbe67753fb19f74b9bb0742de5f3d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 2 10:02:44 2013 +0200
+
+    Fix for PDF_Annotation for properly get text from frame
+
+commit 951b4ff230896ca9636e4d92618a3e987d9d713f
+Merge: 4cb4f0b c8b27c6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 2 09:20:58 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+
+commit 4cb4f0bf59118fb4f0c74e2e170e1dad3cabe627
+Merge: 37a4c39 53c6435
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jun 26 14:42:48 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 37a4c39deb71a3b482ec270a6a62dd999d04aa72
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 25 12:57:23 2013 +0200
+
+    FIX: wrong definition of virtual functions MarkInsert.setValue(...)
+    causing values of edited mark were not set in edit dialog
+
+commit ac5af8760f9bfa116d096ed759fa8ffb4796c07d
+Merge: 793348d 31ab2d6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 25 12:44:51 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/plugins/picbrowser/picturebrowser.cpp
+    
+    Scribus/scribus/plugins/tools/2geomtools/meshdistortion/meshdistortion.cpp
+    
+    Scribus/scribus/plugins/tools/2geomtools/pathalongpath/pathalongpath.cpp
+    	Scribus/scribus/plugins/tools/pathconnect/pathconnect.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/tocgenerator.cpp
+    	Scribus/scribus/ui/search.cpp
+    	Scribus/scribus/ui/search.h
+    	Scribus/scribus/ui/smtextstyles.cpp
+    	Scribus/scribus/ui/storyeditor.cpp
+    	Scribus/scribus/ui/tabpdfoptions.cpp
+
+commit 793348d46108429cb5f24052f00e153dad64bd94
+Merge: fcd1af6 30cfe1e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 11 10:00:31 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit fcd1af668560a8e2143cf07a3c0ad8431b215e5f
+Merge: 7bbb2b9 735679d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon May 27 08:17:50 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 7bbb2b9f3983e8ae72b0d3092c26ab499caa79a3
+Merge: af7b998 8941912
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed May 22 08:32:01 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit af7b998db256b2f34a9f42146ae16f0b97c0fed0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon May 20 15:18:30 2013 +0200
+
+    Fixes for compiling against Qt5
+
+commit 23ae2f627a63c5aa97fca545f410d4b9eb17e2fb
+Merge: f87a109 dca50d4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon May 20 13:16:56 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
 
 commit f87a1095d9e369c913225ba2e0a79784965889c2
 Author: Cezary Grabski <czarek@oferuje.pl>
@@ -108,6 +1344,34 @@ Date:   Tue Apr 30 16:17:59 2013 +0200
     Conflicts:
     	Scribus/scribus/plugins/import/wmf/wmfimportplugin.cpp
 
+commit 8e7bf33ddf8ab0b908986f818130c3cad036a109
+Merge: 5044f4d 726c0a0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Apr 18 14:46:13 2013 +0200
+
+    Merge branch 'ece15' of ssh://oferuje.pl:22789/home/git/ScribusECE into ece15
+
+commit 5044f4d7af5a9a2082b3b9d0eab63bfd2f43e3c9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Apr 18 14:44:30 2013 +0200
+
+    Fix in parsing.cpp from ShortWords plugin (broken by previous commit)
+
+commit a67b5e7096f8426c228b75ce92206c648dbd93ff
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Apr 17 13:49:47 2013 +0200
+
+    Fix for shortwords plugin run from TextValidatorImpl go through all
+    story.
+    Fastering fixes for shortwords plugin.
+
+commit 726c0a08f5391bfbe1fb4825269e691c30c68c70
+Merge: ef5f8aa b2f9a87
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Apr 16 16:41:05 2013 +0200
+
+    Merging SVN
+
 commit ef5f8aa0311ac985a973b1c84d550a41166a203a
 Merge: bb35f09 baa84d3
 Author: Cezary Grabski <czarek@eee901.(none)>
@@ -127,6 +1391,139 @@ Date:   Sat Apr 13 12:19:18 2013 +0200
 
     SearchReplaceDialog fixes.
 
+commit baf572f0db5e46476f3e39d92e7e5a9120ebd29c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Apr 9 15:47:25 2013 +0200
+
+    Further work on SearchReplaceDialog
+
+commit d9c9261c74654796fd2dfb5eb7e7619758f5a07a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Apr 9 08:08:53 2013 +0200
+
+    SearchReplaceDialog:
+    Fix for read from preferences search range combo index.
+    Some code order refactoring.
+
+commit 1eaa1954238a99938b2fd97d32f239d8fd0a36a2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Apr 8 15:46:33 2013 +0200
+
+    Further work on new Serach/Replace
+
+commit 5292b035f4a06dafd6d38e60b79fef95683c4300
+Merge: 65bf97d 2aeb407
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Apr 8 07:22:46 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 65bf97d2f675ed2b499d6c632589bb99584fc68e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Apr 5 15:19:03 2013 +0200
+
+    New SearchReplaceDialog class. Initial support for RegEx search.
+
+commit 7872125224292dbe08642b13304e2885ee0a4a8f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Apr 3 15:43:34 2013 +0200
+
+    Fixin way of autoheigth feature with changes in way of calculating text
+    fitting in frame.
+
+commit f5583484ad2b1051cecd6da82d90bc55973d15f3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Apr 3 08:09:07 2013 +0200
+
+    Using new findParagraphStart/End functions instead these based on
+    paragraph index.
+
+commit bd846534c43684848fe99e9d79f1a4f979f58a14
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Apr 2 18:06:10 2013 +0200
+
+    Fix autoheight feature - sometimes goind to infinitive loop.
+
+commit ee1d6a78d984ad3b3f9f80553e1d3e463b7293bd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Apr 2 15:46:18 2013 +0200
+
+    Hacking problem with importing welded items.
+
+commit 5d1e31fb0cc5c91cf9775fae2847a43746d2964f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Apr 2 14:47:43 2013 +0200
+
+    Removing overloaded checks of document changes while toggling snapping
+    and after keys pressing.
+    Removing some debug warnings related with TOC loading from SLA.
+
+commit 2fee9785045d883aac6855902b23976576a359ab
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Mar 29 15:28:06 2013 +0100
+
+    Fixes for new TOC.
+
+commit c8519338be9b9cb78cd201480fbab8897dc6b2fb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Mar 28 20:18:16 2013 +0100
+
+    Styles Based TOC - finishing, polishing, fixing.
+
+commit b02e3cc8f5f51cf61842b617b9e9b1c819daaa59
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Mar 28 15:55:32 2013 +0100
+
+    Further workr with style based TOC
+
+commit dd385a247b8b49c0bf478ee39c91bf017400936e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Mar 27 15:50:49 2013 +0100
+
+    First try of style-based TOC
+
+commit 3eca5181cd3922e7cc1e7994a6b5e6a7bf1eb2ea
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Mar 27 11:31:24 2013 +0100
+
+    Refacotoring some names of varaibles and moving some methods from
+    ScribusDoc to PageItem. Fixes for getting text from paragraph and for
+    rendering style varaible mark`s text in PDF.
+
+commit 0b9e8c63a06693fee8b75d0357fd0cad90fbf8ad
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Mar 26 15:45:50 2013 +0100
+
+    StyleVariableMark
+
+commit 709ae9674210e63f42b3f77a74a20acc97c932ca
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Mar 22 16:04:20 2013 +0100
+
+    First try to make marks with variable text from style occurence.
+
+commit d4b6fbeffb79dd3db7517d708b4936986461521b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Mar 22 09:23:15 2013 +0100
+
+    Fix compiler warning for retrun statement for Auto Quotes in Text
+    Validator. Remove unused include from tvdialog.cpp caused compilation
+    error.
+
+commit 9eee3f7379f38b611e29f93762673e93f92bd1c5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Mar 22 09:09:09 2013 +0100
+
+    Auto-height expands text frame to page bottom if text dosn`t fit in it
+    and it is single frame or last in chain.
+
+commit 2a0c9b817387f1df9c5051af2b55b6c905087749
+Merge: 58d3995 3d40bb5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Mar 19 07:54:36 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
 commit 58d3995a40e959d44a8fb8f1be0f04a3f703bad3
 Merge: 6c4907d 8ee9184
 Author: Cezary Grabski <czarek@eee.(none)>
@@ -134,14 +1531,2865 @@ Date:   Sun Mar 17 09:38:14 2013 +0100
 
     Merge branch 'svn' of git://scribus.net/trunk into ece15
 
+commit 6c4907df91040a56149c6add78edacbaec52f74e
+Merge: 87c866b 71d070b
+Author: cezaryece <cezaryece@scribus-ece.info>
+Date:   Fri Mar 15 18:51:34 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/plugins/scriptplugin/objpdffile.cpp
+    	Scribus/scribus/ui/about.cpp
+
+commit 87c866bd3df82c476b1d69eb8c69609307c13f3d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Mar 4 15:49:18 2013 +0100
+
+    footnotes fix
+
+commit b9162c5bcd2e0f3b2412cc6e86407b5da6801d9a
+Merge: d194be4 fc5515c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Mar 4 15:41:57 2013 +0100
+
+    Merging trunk/svn
+
+commit d194be49007cd8d9911fda95e12b9f718130b0c7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Feb 27 11:23:14 2013 +0100
+
+    Fixes for Text Validator. Add TV in contextmenu if plugin is enabled.
+    Hack for inserting spaces between .,:- and numbers.
+    .
+
+commit 39e7e2b3a65c6db3bc39d6b9d150f85854e795ba
+Merge: 2401b7b d04d4d7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Feb 27 08:00:53 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 2401b7b43adfe6a765fbc26860b0d5ee670bc67c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Feb 26 15:18:52 2013 +0100
+
+    Make replacing string working in Text Validator.
+
+commit 680cb2849d8a73a874f98d049df8446f78960b24
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Feb 26 14:44:04 2013 +0100
+
+    Removing old Validate Text option and its routines.
+
+commit a27f5a0957fa874bdd4cef1fba35db1635f90db3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Feb 25 15:37:37 2013 +0100
+
+    Add auto-Quote and Short-Words to Text Validator. Try to run it on text
+    import from file with option to run or not Text Validator in Import File
+    Dialog.
+
+commit 256d927dfc320269120e1652da4d7605681f9aa5
+Merge: 70de2b4 0083367
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Feb 25 08:29:36 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 70de2b47cd30f09240f0ab6b87e6536d442d28aa
+Author: cezaryece <cezaryece@scribusece.info>
+Date:   Sat Feb 23 16:01:11 2013 +0100
+
+    Fixes for Text Validator
+
+commit 04fb1b802349354815e1f51a54508f81bf24446b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Feb 22 15:50:58 2013 +0100
+
+    Text validator plugin
+
+commit b609db34d354d9fb0fc596fdda1228d203dc828b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Feb 21 12:05:37 2013 +0100
+
+    First expresiion of Text Validator with fixing way of mergin paragraphs
+    with different styles (now first style is used)
+
+commit dee26785d5f354850b852ecbb8c8d4e29cb48463
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Feb 19 14:50:41 2013 +0100
+
+    Change of getting character style at end of paragraph (from last
+    character, not from paragraphStyle).
+    Fix for normal Word Tracking change from PP.
+
+commit 5806328c5ca77d7b4b363728812e9656de903367
+Merge: a3248ba b32b4c5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Feb 19 09:59:29 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit a3248ba2fcda867127d5efd859f445a2cd84b483
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Feb 18 11:21:47 2013 +0100
+
+    Fix compilation error
+
+commit 9716f5010530487bab42c0565d171ca4880732e5
+Merge: 09eae8b 44f056d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Feb 18 07:41:32 2013 +0100
+
+    Sync with trunk
+
+commit 09eae8b9537ac7aebdeb575e0409b03941d878fb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Feb 15 10:57:36 2013 +0100
+
+    some layout() testing
+
+commit 673a28946c89c8cc8c8166080aaaf864b3b03619
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Feb 6 10:04:52 2013 +0100
+
+    Disabling activation of Shape Tab in PP if empty frame is selected.
+
+commit 623b7826dceb0eccd85db1fe60376b27889c62e6
+Merge: 64ff829 4f3f277
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Feb 5 14:29:13 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 64ff829e0c7b96850b8c9eb32cd8250cd6d1f039
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jan 22 15:14:54 2013 +0100
+
+    Testing platform.
+    Refactoring doc -> m_Doc in ScribusMainWindow.
+
+commit ef24c9a792538a2dfff05a6d0d651e8d69e430bf
+Merge: 1d1b3b9 ed7817f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jan 21 09:18:28 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 1d1b3b98f7c68d27935cdfbfd6e28626c7d91a7f
+Merge: d7f8b5f 7a104ce
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Jan 19 13:38:44 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit d7f8b5fe8e0911b8952e1901886df3ba77d32df0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Jan 19 13:38:13 2013 +0100
+
+    Auto-Spacing - fixing and polishing.
+
+commit ef8db38c21d6a93ab034a725fc7aa5bfc86d0381
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 18 15:49:38 2013 +0100
+
+    Auto-Tracking.
+
+commit 4163c777c458663b84286b0bb09c3b9e92af95c3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jan 17 15:34:55 2013 +0100
+
+    First try of autogrowing spaces between chars if spaces are to big.
+
+commit a93898133397b172841c55a39be12414d7fb61b1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 16 12:04:42 2013 +0100
+
+    Fix AddSpace4Chars for recognize wide range of white chars.
+    Bump about version.
+    Fix for wrong save of Typographic Space preferences.
+
+commit 09a053ee41158862965ce41500523876568f03e1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 16 08:32:14 2013 +0100
+
+    Typographic spaces for glyphs
+
+commit 73b0c46b0f1cde3149dcccb61a41afa6bc41c87b
+Merge: 7e9c59a 58255da
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 16 08:21:18 2013 +0100
+
+    Merging trunk
+
+commit 7e9c59a18c1aeef059b581713b41b00cfbd7473d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 11 15:12:54 2013 +0100
+
+    Merging imposer
+
+commit d2ff1361c928d2f606382c2d7ea99172cf5fea35
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 11 14:35:42 2013 +0100
+
+    Compressing Style Manager tabs to smaller size.
+
+commit bccd073c77f746fb2e1206b0d871e5aeeecd3a8e
+Merge: b7ee0d8 576ecae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 11 11:35:49 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit b7ee0d80254dadae93dc2237d654d3f3aaa8c1b2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jan 8 13:19:23 2013 +0100
+
+    Fixing some differences in code comparing with trunk.
+
+commit d293edb519ba666a695184fa1c8bd466a58081d7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jan 8 08:28:50 2013 +0100
+
+    Fix for notesframes autoheight computation.
+
+commit 4c335c38d52ee9d677a0b35f3c66ad80ea871738
+Merge: 02f9685 e74f2b8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jan 8 08:17:17 2013 +0100
+
+    Sync with trunk
+
+commit 02f96857cc6160717132977ce6c61c898597479e
+Merge: 6f414d6 e59ac91
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jan 7 15:48:51 2013 +0100
+
+    Sync with numeration branch with fixes for lists import.
+
+commit 6f414d6988b67eb22f478462726f72ef15a30642
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jan 7 15:20:09 2013 +0100
+
+    ???
+
+commit e59ac91414e3699dbcef8689e58099fb6f61bdda
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jan 7 15:16:50 2013 +0100
+
+    Sync with trunk
+
+commit aa7aff03a4d4fe2a1d6f5d766431e3366239bd1d
+Merge: 7722c18 a534288
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jan 7 15:09:54 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 7722c18918d8adcfd34418ee06db0e2dd0ec5487
+Merge: 8e47546 eb7750c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jan 7 13:21:55 2013 +0100
+
+    Better lists import from ODT file. Reapply missing footnotes import from
+    ODT file.
+    Sync with current trunk.
+
+commit 181ecf0d237a22e468e28949eae8afd8044c7b22
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 4 11:14:11 2013 +0100
+
+    Scribus.pro
+
+commit 7d00f1181459b551de5d1699db4bc6d2dada4eef
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 4 10:38:16 2013 +0100
+
+    File name of Image Frame added to Status Bar Info.
+    Fix for crash on renumbering nonvalid frames.
+
+commit ed410db0b4e400f9b1eab9caf114ae17f6ea0c7c
+Merge: 61adb4c 0ca9d57
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 4 08:36:39 2013 +0100
+
+    Trunk merge
+
+commit 61adb4cad310aba64571e0ad0da02768cca9e314
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jan 4 08:24:39 2013 +0100
+
+    Better calculating some values int <-> double
+
+commit c3c0b786d629479fed638b15d780fb63cf4b90f0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jan 3 15:51:13 2013 +0100
+
+    Fine-tuning autoheight for text frames.
+
+commit 5ebe03315b82691d4f15c227113034d37614a014
+Merge: ff7b7b1 1e183d6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jan 3 13:27:58 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit ff7b7b17dc8a30225a32955012cff07bc0435e6f
+Merge: 25849e9 8e47546
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jan 3 13:04:24 2013 +0100
+
+    Merging trunk.
+
+commit 8e47546f4c974fcbe670fc3981c86c519a80c8c6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jan 3 08:56:29 2013 +0100
+
+    Refactoring some variables as Craid suggest.
+
+commit f5d1bdf3cd23983ba3d86f467a7e02f935116573
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jan 3 01:27:59 2013 +0100
+
+    Change of names of tags in SLA file.
+
+commit bd6e7138ef0ce787357d49f659f20cf17a815418
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 2 15:45:47 2013 +0100
+
+    Fix for get deafult set selected if style has empty numset name.
+
+commit eca99e32ad1cb68bb7e265a18e78663ee050dcfc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 2 15:44:01 2013 +0100
+
+    Fix for not present "default" numeration set in new doc.
+    Fix for removed numeration set but used in local style.
+    Changed default values in UI for ParaEffects.
+
+commit 1838b1c1e93507ecdba0baa0b3897b367f6bd859
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 2 13:48:24 2013 +0100
+
+    Changes in UI proposed by JLux in #11315
+
+commit b6662b1999ca406c73d805944d5ea5af753417ea
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 2 13:13:51 2013 +0100
+
+    Better handling changes in used numerations (updates of comboboxes with
+    numerations names).
+    Fix for deleting unused "default" numeration (no longer disappers).
+
+commit 0ee3b57e707f8e005f19b6cc28d11fdb18cd281c
+Merge: 0f8315f 08138a5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jan 2 09:16:29 2013 +0100
+
+    Merging trunk/svn
+
+commit 0f8315f9ee8bae79dfe870ea7113d8274dc4040b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Dec 29 11:58:43 2012 +0100
+
+    Make more condensed UI for PropertyWidget_ParEffect.
+
+commit 4145364a04e5bacb715fedcff04c82c9faf6f9e9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Dec 29 10:37:28 2012 +0100
+
+    Force update numbers after changes made by Properties Palette.
+
+commit 4ad0c6d7426999390e163a212cc138ae31fb4ff3
+Merge: ea47c7b c7b0565
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Dec 28 23:33:48 2012 +0100
+
+    Merging SVN
+
+commit ea47c7b8e81833e7454ed00d55b0a753890fad8b
+Merge: 1feb05b 13d788c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Dec 27 16:54:05 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 1feb05ba9928da68f4bf032480ebd2290e9f5853
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Dec 27 16:53:08 2012 +0100
+
+    Change way of how Character Palette works for bullets.
+
+commit 25849e9d9ff966111133c822c1226a277df750b1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Dec 27 11:48:28 2012 +0100
+
+    Make enable to show again dialog with text import settings after
+    checking "Don`t Ask Again"
+
+commit f7fed543617c68f4e6e822cfbcf106522347ff8a
+Merge: 1f9eca0 d9a018d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Dec 27 08:24:03 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 1f9eca0bf3d15c71567674c78dc4d94911a4b312
+Merge: 8ce99c9 ceacdf2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Dec 26 10:34:33 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.h
+
+commit 73f4430a1f62bd79affab6db8e32b5abbdde73c9
+Merge: a7e836f 8ce99c9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Dec 19 13:32:18 2012 +0100
+
+    Merge branch 'numeration' of scribus.net:scribus into ece15
+
+commit 8ce99c9cc48f5727688d4f7cadc79a4849158d8c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Dec 19 12:34:27 2012 +0100
+
+    Fix for starting number.
+
+commit 05b37768f73a8dc9c6cece5546147569d7867002
+Merge: a790f0c c5e5ab9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Dec 19 10:50:18 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit a790f0c5b7a654a2cbafba8ba5006e6c064d5b15
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Dec 19 10:49:00 2012 +0100
+
+    Fix for update if charstyle used in paragraph effects was removed or
+    renamed.
+
+commit 7ee9c5ea78b60fb3ff7e9bc73faa8add71f9b28e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Dec 19 10:02:34 2012 +0100
+
+    Fix for missing signal connection on ParagraphEffects widget creation.
+    Refactoring same common code in one new method.
+    Disabling doc signals for applying paragraph style properties.
+
+commit a7e836f692011d170146635ae57cb2b9d6ed566d
+Merge: e9d7b87 80b8f32
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Dec 18 11:15:22 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit e9d7b872f2de6283ea1d6fad2f8bdbf258adf735
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 17 14:46:28 2012 +0100
+
+    Another fix for hyphenation prefs.
+
+commit 5587822306a0528b60f8ae27bed6a5038dee850b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 17 13:33:02 2012 +0100
+
+    Fix for update document after clearing it.
+
+commit 147dded7e78b3fb3d44dfcef63a01e0c5d3730e8
+Merge: 2b1b87f 19bc087
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 17 13:02:26 2012 +0100
+
+    Restorin possibility of import footntoes from ODT files.
+    
+    New command in Extra menu - Set Clear Attributes & Clear Document for
+    fast delete unwanted pageitems without  NODEL attribute and clear
+    pageitems with CLEAR attribute. Set Clear Attributes sets NODEL
+    attribute for current all items and set CLEAR attribute for all items
+    without content (empty frames).
+
+commit 2b1b87f21d43019cac7f7a28c6de4d5ac51507a2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 17 10:14:12 2012 +0100
+
+    CMakeLists
+
+commit 19bc08727728be535ed71593705185c677d98716
+Merge: 75307c2 42de65d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 17 09:22:19 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 75307c2addc3e903c068251a66b7ad4731611493
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Dec 16 17:58:29 2012 +0100
+
+    Fix for copy/paste text with bullet/numeration marks.
+
+commit 5552f355c883aaeda5a0eee7ca883dae394183f3
+Merge: 81119bd cd705e4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Dec 16 13:24:05 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 81119bdcef7d631d034143665393e6b74952e8c2
+Merge: 8d45c62 c075e08
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Dec 15 18:23:18 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 2ae4403693e0b4655220c6297e6864b92d086a03
+Merge: fe4d678 8d45c62
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 3 15:36:07 2012 +0100
+
+    Merge current numeration branch.
+    Fix for new poppler custom instalation place in /opt.
+
+commit 8d45c6221427f2b8b9a786f4764ad08fc334163e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 3 12:21:16 2012 +0100
+
+    Undo removing commented line with reading bullet char in text importer
+    (maybe it can be properly set up in the future).
+
+commit d4d6d265b2b8248a1105b89c9e81b697a34eca1b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 3 11:33:37 2012 +0100
+
+    Better import of list from ODT files.
+
+commit 3d62f338823f4ad8937a682a2846575d9d68c6b8
+Merge: 4944df5 4ce8359
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Dec 3 08:20:42 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 4944df558fd8c195a6ea111133e56a88dc8d3056
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 27 15:39:12 2012 +0100
+
+    Delete selected text in bullet string LineEdit on inserting special
+    chars from chars palette.
+
+commit 7667679e48628eadb94d7056858307219cc28d92
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 27 13:20:12 2012 +0100
+
+    Fixed loading numeration parameters from SLA file.
+    Fixed counting and resatrting numerations.
+    Fixed updating numeration set with empty name.
+
+commit 16de3e27b85748e85d9087d3b8deab9f54cbec8a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 27 10:10:55 2012 +0100
+
+    Fix for unwanted disabling Create New Set line edit widget.
+    Fix for dirting selection on new set name editing.
+
+commit 6346a8243fa412d66b2c255eaeaf6ff327dbf535
+Merge: db59463 64b4d89
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 27 08:59:35 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit db594636e0a51853c23a075a41ee76d8e373e330
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 26 15:15:12 2012 +0100
+
+    Add update for marks into Update Document command.
+
+commit 4c2021d18003f465e6a17f9560437c93886b73e0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 26 14:36:51 2012 +0100
+
+    Change way of how autoindentation works.
+
+commit 5aa6e8691fc233f289f0d280cf5910f3ef60eb56
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 26 10:23:27 2012 +0100
+
+    Removing some overload from ScribusMainWindow::slotDocCh signal for
+    update numerations.
+    Refactoring ParEffectBox to parEffectWidgets.
+    Fix for level max values in PP/Paragraph Effects.
+    Fix for reseting local settings to numeration defaults after reseting
+    counters.
+
+commit 5e4db6f33f2da2e21e6aac348d6d50c6e0f8a248
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 26 09:12:45 2012 +0100
+
+    Fixed calculation of maximum numeration level in StyleManager.
+
+commit 76d932dd9d1b598380e0baf154ffcfe2282e783c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 26 08:41:52 2012 +0100
+
+    Refactoring PropertyWidget_DropCap to PropertyWidget_ParEffect
+
+commit 3c10d0285007e1de60b5228dfcbae54f8cf015b8
+Merge: c2c8072 f7de1e2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 26 08:19:35 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit c2c8072aca90bec648c18f97e5557c3bd68be8d5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 23 16:01:51 2012 +0100
+
+    Fix for widget connection with parent styles in PP.
+    Add minimal and maximal values for some spinboxes.
+    Fix for startting value for numeration (start at 1 not 0).
+
+commit 7070df59be85c06bbf2df8a158751043353c351a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 23 09:13:24 2012 +0100
+
+    Missed connections/disconnection of signals in smtextstyles.cpp
+    Fix inlcudes propertywidget_dropcap.cpp
+
+commit 7c023c3552814a6e6fcb5821c52688938c7f44cb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 23 09:07:13 2012 +0100
+
+    Sync with trunk.
+
+commit 22024aa0fd2b27052e162851c4bbd05668c9278a
+Merge: b14374a cc7ac6d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 23 08:33:00 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit fe4d678ac488f1d47ec8255df89c57a44c6682f6
+Merge: 2abef7e cc7ac6d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 22 08:29:15 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 2abef7e377b4a4ebda6fc71d82c56433cde8a7c3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 20 15:48:09 2012 +0100
+
+    Faster Undo recognize in massive styles applies.
+
+commit 76ebb2074d60d3451790ee85f308e47c003f2381
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 20 15:41:58 2012 +0100
+
+    Small fixes.
+
+commit 5720501d6fbdf742da8c5eb847b90a75a2e8ad48
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 20 15:40:08 2012 +0100
+
+    Refactoring some UI classes to the Scribus styles supporting ones.
+
+commit a2521f61fcf39bd571c03018ce7000dc61331787
+Merge: a517c84 b14374a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 20 09:24:33 2012 +0100
+
+    Merge of numeration with marks.
+
+commit b14374a79b5531ffd2debeb91243cd303e7c4521
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 19 15:52:20 2012 +0100
+
+    Fix for compile error in prefs_documentsections.cpp
+
+commit 978f4227f1b47b2b568feacdfa34f31555ae1257
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 19 15:15:38 2012 +0100
+
+    Better sync with trunk.
+
+commit 71fc13b254f51601fc7e57440dc8d42833bf9134
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 19 14:45:25 2012 +0100
+
+    Refactoring numStyle to numFormat.
+
+commit 62a48d8677dbab0138ced667417b0fd8d474fbfe
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 19 14:26:31 2012 +0100
+
+    Moving support for local formatting from StoryText clas to ScribusDoc.
+    Fix for reseting numeration counters.
+    Fixes for crashes while changing and undoing text operataions with
+    BullNum type of marks.
+
+commit 98da1be20e708374c53d68ed2fbf429728edc21f
+Merge: d7f6200 68e4d81
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 19 08:33:21 2012 +0100
+
+    Sync with trunk
+
+commit d7f6200674a64d3e188d2f2612508ce29f3429b7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Nov 18 13:12:56 2012 +0100
+
+    Fix for numeration for local block.
+
+commit 988adcf557deb4d306c7bd9efbca0ce6bad3b357
+Merge: 170b990 1187b86
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Nov 18 10:51:25 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 170b99033eae61cadd97bf563684a6e94cc808c0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 16 15:56:41 2012 +0100
+
+    Fixes for PEffects support in PP.
+    Fixes for local numbering.
+
+commit eb0932de4b47b04c553059fc71a23cd12aef2181
+Merge: 067b958 89aec0b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 14 13:02:48 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 067b958a0f1131acfaaf647f41d9695b3b529274
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 13 15:22:30 2012 +0100
+
+    Try to fix applying paragraph effects fron PP.
+
+commit d6ec32882abd644b5d72a26f730fabd05b52ab3a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 13 09:51:20 2012 +0100
+
+    Fixed calculating of parEffects offset and autoindentation for bullets
+    and numbering.
+
+commit e0d11f29069454a594eb26eb60a529002b697ad5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 12 15:34:51 2012 +0100
+
+    Change of parEffects indentation.
+    Dont save marks for bulleting and numbering.
+    Refactoring name of some slots.
+
+commit 79cfb80be3ae9b5c9d2c2acccd2ffb88b79fc8f0
+Merge: a25f500 94d2b97
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 12 14:07:59 2012 +0100
+
+    Sync with trunk.
+
+commit a517c84177a46d1a215c8125357f4ae50dfeb551
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 7 09:28:42 2012 +0100
+
+    Fix for wrong support of Prefligh Warnings color.
+    Fir for wrong color of selected and warned text.
+
+commit 7553f90721b6b65b79d5e2941ac66cf0a9c3db45
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 6 16:02:37 2012 +0100
+
+    small fix
+
+commit 09ac5640113513fd56def339284b9eeeb8fdd9b6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 6 14:30:36 2012 +0100
+
+    sync with trunk/svn
+
+commit 843eed1af2d293bc928bf6f248ac6b83c23b963a
+Merge: da009bb e651123
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 6 10:22:06 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/plugins/import/pdf/slaoutput.cpp
+
+commit da009bbd0a4098cd9f2d4a6b396abee31d3bf496
+Merge: d7d1452 0966841
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 6 10:18:48 2012 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+    	Scribus/scribus/CMakeLists.txt
+    	Scribus/scribus/canvas.cpp
+    	Scribus/scribus/notesstyles.cpp
+    	Scribus/scribus/notesstyles.h
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem.h
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_noteframe.h
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/pageitem_textframe.h
+    	Scribus/scribus/pagestructs.h
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format_save.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribus.h
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusdoc.h
+    	Scribus/scribus/scribusview.cpp
+    	Scribus/scribus/sctextstruct.cpp
+    	Scribus/scribus/sctextstruct.h
+    	Scribus/scribus/text/storytext.cpp
+    	Scribus/scribus/text/storytext.h
+    	Scribus/scribus/ui/mark2item.cpp
+    	Scribus/scribus/ui/mark2item.h
+    	Scribus/scribus/ui/mark2mark.cpp
+    	Scribus/scribus/ui/mark2mark.h
+    	Scribus/scribus/ui/markanchor.cpp
+    	Scribus/scribus/ui/markanchor.h
+    	Scribus/scribus/ui/marknote.cpp
+    	Scribus/scribus/ui/marknote.h
+    	Scribus/scribus/ui/marksmanager.h
+    	Scribus/scribus/ui/markvariabletext.cpp
+    	Scribus/scribus/ui/markvariabletext.h
+    	Scribus/scribus/ui/notesstyleseditor.cpp
+    	Scribus/scribus/ui/notesstyleseditor.ui
+    	Scribus/scribus/ui/propertywidget_dropcap.cpp
+    	Scribus/scribus/ui/propertywidget_dropcapbase.ui
+    	Scribus/scribus/ui/scdockpalette.cpp
+    	Scribus/scribus/util.cpp
+    	Scribus/scribus/util.h
+
+commit d7d145246f48b663f0a61f0a911c9faf99f8c52d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 5 11:05:14 2012 +0100
+
+    langmgr.h
+
+commit 78983568500ab25c4af7cfd8a2d8ca63ea850ed7
+Merge: c3aa757 fd7d890
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 26 15:52:01 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/langmgr.cpp
+
+commit c3aa7571acabaf26257757180972aba1cd15a95d
+Merge: 73c90ec 60d1cd2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 19 14:58:50 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/ui/contextmenu.cpp
+
+commit 73c90ecfc7c49667a64229f2109ead3a5ee4d812
+Merge: 5f9ca11 dc1f221
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 19 14:52:31 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/plugins/gettext/sxwim/contentreader.cpp
+    	Scribus/scribus/plugins/import/cgm/importcgmplugin.cpp
+    	Scribus/scribus/scribusview.cpp
+    	Scribus/scribus/text/storytext.cpp
+
+commit 60d1cd29c75cdf8ee179007afe58b2111ca6a267
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 19 14:49:25 2012 +0200
+
+    Fix differences to trunk.
+    Fix saving welding info.
+
+commit c4369ea94b8014bf2c41bf5b4544060da578c9c6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 19 14:40:11 2012 +0200
+
+    Fix wrong CONFLICT resolving.
+
+commit 4f3753e3cca2a69a5e0d926cc203b4e1cb2346d9
+Merge: 2920955 dc1f221
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 19 14:34:52 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/scribusview.cpp
+
+commit 2920955ce65d1fb2b411c560150229f53f4028b2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 19 14:32:15 2012 +0200
+
+    Fix problems with duplicate and pasting frames with notes marks.
+    Remove check if any marks exists in frame (for enabling Update Marks menu entry).
+    Fix for welding notesframes.
+
+commit 5f9ca11120bb7e7e11935968a86826ef90ccd5cd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 17 12:36:26 2012 +0200
+
+    Revert missing fix for resizing image frames.
+
+commit 487cd1f3a1e61a6bdc726b225cd5ce3b25db4907
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 17 12:27:12 2012 +0200
+
+    Fix double save of welding info.
+
+commit 17204a762cbd62902786d517a147a03fbea661e3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 17 11:56:24 2012 +0200
+
+    Fix crash with parent style in Paragraph Effect widget.
+
+commit 2f9a99e6dc63ab10bfe03785042bbfbd3879f959
+Merge: 984c3f0 a25f500
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 17 10:48:28 2012 +0200
+
+    Merge branch 'numeration' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/desaxe/digester.h
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/plugins/fileloader/scribus134format/scribus134format.cpp
+    	Scribus/scribus/plugins/fileloader/scribus13format/scribus13format.cpp
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/scribus.h
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/smcstylewidget.cpp
+
+commit a25f500807a4b3873b74b58269f89d6f17ad9484
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 16 15:34:52 2012 +0200
+
+    Merging trunk
+
+commit f795932a559249700c9561776718b2e91c441092
+Merge: c71ca3f df0f949
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 16 15:06:08 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.h
+
+commit 984c3f09f495c8bcd9548988af148943743680c2
+Merge: 60f7cd8 86d60aa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 16 13:57:40 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+    	Scribus/scribus/gtaction.cpp
+    	Scribus/scribus/gtaction.h
+    	Scribus/scribus/gtwriter.h
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem.h
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/plugins/import/drw/importdrw.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribus.h
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusdoc.h
+    	Scribus/scribus/sctextstruct.cpp
+    	Scribus/scribus/sctextstruct.h
+    	Scribus/scribus/ui/cpalette.cpp
+    	Scribus/scribus/util_text.cpp
+
+commit 60f7cd8744fd4daafd6dfc461aac13201366a36f
+Merge: 40f06dc df0f949
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 16 12:27:56 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/canvasmode.h
+    	Scribus/scribus/hyphenator.cpp
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/plugins/import/drw/importdrw.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.h
+    	Scribus/scribus/ui/prefs_displaybase.ui
+    	Scribus/scribus/ui/prefs_hyphenator.cpp
+    	Scribus/scribus/ui/smcstylewidget.cpp
+    	Scribus/scribus/ui/smtextstyles.cpp
+
+commit 86d60aafe925d6bfe99469ad8be901a5f9811a05
+Merge: a5d23b7 c1d3c92
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 16 11:55:37 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit a5d23b7e5f2bfb39fe862b276ca0e8063d67d203
+Merge: 1dd75f7 e7409eb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 14:49:39 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit c1d3c921303017429445169173d1e0032a17ae7c
+Merge: 1dd75f7 e7409eb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 14:49:39 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit 1dd75f78fb82e9391e3bcf5098a8bda24440f460
+Merge: d2b80cc f2a9978
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 13:20:07 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+
+commit e7409eb39c04f9f0e131f3964a39d7f992815ce0
+Merge: d2b80cc f2a9978
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 13:20:07 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+
+commit d2b80cc1153b39723dc56eb13fcfba7c0a1571a9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 11:11:13 2012 +0200
+
+    Better update to SVN
+
+commit 3d8bab5d852a5866b14d8983009bf944cc6223ad
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 11:05:34 2012 +0200
+
+    Update to SVN
+
+commit 0c67c62fe666313583570fa35b03dfa26d87b75a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 11:00:16 2012 +0200
+
+    Update to SVN
+
+commit 01b787d5858b7c2c89a5d91c04d0568cb1d698de
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 09:37:04 2012 +0200
+
+    Best merging current SVN
+
+commit bcf9b7d9ffcc9f3dc9b51d76f132ea8b7bfe1c2d
+Merge: 67b265e c7795cf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 09:18:43 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/scimgdataloader_qt.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribus.h
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/prefs_spelling.cpp
+
+commit f2a997865d616add698c0917d3bc829874f79a61
+Merge: 67b265e c7795cf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 15 09:18:43 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/scimgdataloader_qt.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribus.h
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/prefs_spelling.cpp
+
+commit 40f06dc4138e52d1df50fc84732d4cbbc540187f
+Merge: 58112b1 c71ca3f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 12 15:56:32 2012 +0200
+
+    Merge branch 'numeration' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+    	Scribus/scribus/CMakeLists.txt
+    	Scribus/scribus/numeration.cpp
+    	Scribus/scribus/numeration.h
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem.h
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/pagestructs.h
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format.cpp
+    	Scribus/scribus/plugins/fileloader/scribus150format/scribus150format_save.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribus.h
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusdoc.h
+    	Scribus/scribus/sctextstruct.cpp
+    	Scribus/scribus/sctextstruct.h
+    	Scribus/scribus/styles/paragraphstyle.attrdefs.cxx
+    	Scribus/scribus/ui/propertywidget_dropcap.cpp
+    	Scribus/scribus/ui/propertywidget_dropcap.h
+    	Scribus/scribus/ui/propertywidget_dropcapbase.ui
+    	Scribus/scribus/ui/smpstylewidget.cpp
+    	Scribus/scribus/ui/smpstylewidget.h
+    	Scribus/scribus/ui/smpstylewidget.ui
+    	Scribus/scribus/ui/smtextstyles.cpp
+    	Scribus/scribus/ui/smtextstyles.h
+    	Scribus/scribus/util.cpp
+    	Scribus/scribus/util.h
+
+commit c71ca3ff01ca471bf0a83c0a6a900473bd952c92
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 10 15:47:10 2012 +0200
+
+    Reafctorin PP with Paragraph Effects settings.
+
+commit 420e646d5bc632a2d885b5c60c6e1277a9643887
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 10 14:15:44 2012 +0200
+
+    Fix for crash while deleting text.
+    New feature - auto-indentation depending of paragraph effect width.
+
+commit e97a5d0229eef4fafd6442285e33751cdcb94763
+Merge: 1eb2aeb b15cce2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 10 08:32:59 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 1eb2aebe6ec2f2d762b85c512b336ad328c4721a
+Merge: 9225d4b d4fb6df
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 9 15:37:46 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 9225d4b01cd42245c73128a5e7d50c6ddaf05d47
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 9 15:37:29 2012 +0200
+
+    Implementation of auto-numbering effect. Almost working.
+
+commit 98ff24e1f9c21112a4683a0ad13ca0a93ebe3bd6
+Merge: 7b1cee2 8236d6d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 1 08:14:09 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 7b1cee224340988c7318c335bb7e56aec58dbefe
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 28 15:16:31 2012 +0200
+
+    Fix for using character styles for paragraph effects.
+
+commit 8326368b8565149a8e54f35d6a22bebfc04c26d0
+Merge: 2ea24f0 2edb118
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 28 12:22:09 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 58112b146287c9c99bd9ec71ecccf10d83917c1a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 28 11:37:30 2012 +0200
+
+    Fix for too wide image properties tab in PP due to long names of color profiles.
+
+commit 4cd1ee2e511ea2b60ff7d86fd352678207ccfc04
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 28 09:34:42 2012 +0200
+
+    Fix for resize imageframe with fitImageToFrame
+
+commit d517ca01f2561b0363354bae7c5e223de914378e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 27 14:19:59 2012 +0200
+
+    Make autoselectable tabs in Properties Palette regarding to selected item.
+
+commit 835106b911624e61e9d82aa4c41de28353343688
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 27 13:24:41 2012 +0200
+
+    Fix for selection and preflight warning opacity.
+
+commit 3593b449912c715a658207ce9b5a5fdf01d4639b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 27 12:36:51 2012 +0200
+
+    Fix text opacity.
+
+commit ca2feef719ecd1a87934a4bc8a968b788d86ae48
+Merge: bfff3c2 482e1b8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 27 11:24:26 2012 +0200
+
+    Merge branch 'ece15dev' of ssh://oferuje.pl:22789/home/git/Version14x into ece15
+
+commit bfff3c233b1a25c78a11369a1b835ee5dc1e566c
+Merge: a4e5d30 2edb118
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 27 11:24:04 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 482e1b89dfe6d8b70ebeddc0de9ea99a44857870
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 27 11:23:08 2012 +0200
+
+    Finished PP tab for Paragraph Effects.
+
+commit 93872d882c77aa2830c67acf291de34b187c5b8d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Sep 26 20:29:38 2012 +0200
+
+    Try to fix refreshing PP with curent cursor position in text.
+
+commit a4e5d305d95963a691beb8fa8ad809b6431f3e61
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Sep 26 16:01:57 2012 +0200
+
+    Fixing style editor.
+    Add on-the-fly bullet/numeration control in PP.
+
+commit f96a8cd7d65429f756f41059895c2def6c24fe4b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 24 15:59:34 2012 +0200
+
+    Fix for inherits stles properties.
+
+commit 1eafdd0fa34ba6aea2dc1dc57d24e0c2ca5d09f8
+Merge: 9d0a230 987d683
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 24 09:48:30 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+
+commit 9d0a23042a1f8fda14f501284eda3319aa5c4ea0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 24 09:47:59 2012 +0200
+
+    Fix for inserting french chars (and maybe other) by Alt+^, Key key sequence.
+
+commit 2ea24f05b3718006b7d069c3d45ed2856bccdc28
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 21 15:48:34 2012 +0200
+
+    Fix for some variables were not visible as childs of smpstylewidget.
+    Fix for render bullets in empty lines.
+    Shorter predefinied bullets list.
+    Disable possibility to set empty bullet str and apply it to style.
+
+commit de47c1db498a2a3a631eccf3db9e22be106bbc66
+Merge: b0e0c57 9378c6c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Sep 21 14:38:48 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 6ade78c9399cc21e251c7b054f2a8810b6c2e5fb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Sep 20 14:03:52 2012 +0200
+
+    Refactoring some ui variables so they are recognized in QtCreator as widget childs.
+    Fix for set bullet string on bullet effect set on.
+
+commit 1bf54142ea85f859b9e9e19726c98dde8c46ffbd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Sep 19 15:38:53 2012 +0200
+
+    Fix hyphenation problems.
+    Removing massive QList.at(x) calls (for speedup).
+    Removing some unused variables.
+    Fix update of text flow below frame after autoresize.
+
+commit 06c84a6b1f51a7bd43395cc9df234cee0ec6bdf0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Sep 18 16:02:16 2012 +0200
+
+    Enlarge of text tab in Properties Palette.
+    Fix for clearing local formatting with undo.
+
+commit 830b4a8a5702e8205c48730994c1e155c8560d63
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 17 16:01:24 2012 +0200
+
+    Try to fix clearing local formatting.
+
+commit 1b053def70849dc3965a49030a8fc395c6520e94
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 17 10:11:59 2012 +0200
+
+    Fix problems with proper set hyphenation language and automatic hyphenation in doc prefs.
+
+commit 8a59aeb0f45c59e1c610a0d611154ddf63b7b853
+Merge: aadffe4 554ec43
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Sep 17 10:09:34 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+
 commit aadffe4793b3380bd1c7965b21d7d414726e36c9
 Author: Cezary Grabski <czarek@eee.(none)>
 Date:   Wed Sep 5 19:06:21 2012 +0200
 
     updating
 
+commit ff08136e497fcc21211af5b786513c28c947c8c9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 16:00:59 2012 +0200
+
+    Try to make image editor called once
+
+commit 951eb054dfefa13778d49aed8f290a8d7710c1d9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 15:26:05 2012 +0200
+
+    remove Scribus.pro.user from git
+
+commit c7fc5c94bb08a1c174264d3c763e1d9bb22b97d1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 15:23:19 2012 +0200
+
+    Reapply missed UI for hyphenation controll.
+
+commit 3d9a40153d5fb16550af6cc39ae73015437c6a10
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 14:59:55 2012 +0200
+
+    Deep sync with trunk miised for now.
+    Removing commented code.
+    Fix for crash while edit text styles.
+
+commit 4f36a8b47797d4397de924b43d172866c8ee24aa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 10:22:55 2012 +0200
+
+    For footnotes - master frame style is better applied to notesframes.
+
+commit 6f78d6755e0c2818420f60b69aced7fe81444f40
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 09:31:02 2012 +0200
+
+    Fix for getting string from number with leading chars.
+    Small fixes for silent compiler.
+
+commit 290e24f0df5b5de0ba006276d8fdd1699ca82b69
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 07:38:08 2012 +0200
+
+    Fix  to not apply bullets in notesframes.
+
+commit 7eb3f117a2074c8d58b3f34f9487856be260d0fe
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 07:13:19 2012 +0200
+
+    Fixing build problems
+
+commit b8ff24606f199bad57e78abeb4dbe0197043a486
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 28 06:56:17 2012 +0200
+
+    Scpro
+
+commit 4b541e8f388216b3c60463da25a48c6b099003f4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 15:55:30 2012 +0200
+
+    Mergin bullets feature.
+
+commit 4e07c9fb933bb9e34c357be410d8965183a2f2c7
+Merge: 06635e5 666ef03
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 14:54:21 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/sctextstruct.h
+    	Scribus/scribus/ui/propertiespalette_text.cpp
+    	Scribus/scribus/ui/propertywidget_flop.cpp
+    	Scribus/scribus/ui/propertywidget_flop.h
+    	Scribus/scribus/ui/propertywidget_flopbase.ui
+    
+    Removing some unused variables.
+
+commit 06635e5a8cea5d5cd4d6a4c5bbec223fc4251c2f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 14:35:09 2012 +0200
+
+    Check for missing external files with user interaction for finding them.
+
+commit b0e0c5754348756dd994800cd6b9ffc4028399eb
+Merge: 4ca7078 319e5ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 13:52:06 2012 +0200
+
+    Merge branch 'master' of scribus.net:scribus into numeration
+
+commit 4ca7078959a8acd34082a914f2e0e0908c470685
+Merge: fc49038 05b20c4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 13:52:00 2012 +0200
+
+    deleting gitignore
+
+commit fc49038f7ee005d3c354eaebe706de9f3a943a73
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 13:45:15 2012 +0200
+
+    Fix for empty lines with bullets.
+    Fix for applying custom character styles for effects.
+    Fix for PP Drop Cap control (restore bullets while switching DropCaps off, disable bullets if DropCaps switched on).
+
+commit fe4c882b757346e1ddbf598c1d33e0a518962496
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 11:53:45 2012 +0200
+
+    More predefinied bullets.
+    Fix for wrong argument for glyphLayout for prefixes (fixing wrong font applied for bullets if custom char style is used)
+
+commit a24a56474b01930e82245047ee0f05cfec6b6911
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 10:11:23 2012 +0200
+
+    UI string internationalization.
+    Fix for crash after witching bullets off (hl->prefix not set to NULL after deleting).
+    Change in applying character style for paragraph effects.
+
+commit 76d7fc70ee5df8e15b8566924039b6b66e6866c6
+Merge: 7106ca2 666ef03
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 27 08:12:23 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+
+commit 7106ca23c61590176da3eb51f16c1595f17367e4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Aug 26 20:32:24 2012 +0200
+
+    Initial support for reading paragraphs with bullets from ODT file.
+
+commit 1b8c567f73b12595eb7b798325ced1230af0664c
+Merge: b27b6bb aab72e2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Aug 26 18:40:05 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit b27b6bb00144270c371c8709033636096141cd63
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Aug 26 18:37:27 2012 +0200
+
+    Make bullet visible while text is selected.
+
+commit 508396dc9aaaf42d648c4864ca5591b611d99aca
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sun Aug 26 17:40:35 2012 +0200
+
+    Fix for show and hide Char Table.
+
+commit 0c141fb1be94c82d57d48136825c3951b5f276db
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Aug 25 11:15:42 2012 +0200
+
+    CharTable works.
+    Commented code out.
+    Filling combos.
+    Fix bullet string LineEdit/Combo size and seting/returning value.
+
+commit b71b42228d32206e89b97251bb5800eaefa31d23
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 24 15:48:24 2012 +0200
+
+    More on bullets - fix for rendering to PDF, improved UI, text distance works, cave to SLA.
+
+commit a5fbf202c6ff3ff70adce9be081752051baa6d80
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 23 16:03:06 2012 +0200
+
+    More bullets/numeration paragraph style properties.
+    Initial drawin bullets/numbers by additional glyphs.
+
+commit 4db6d9787a206e3d465aaced73eeea0e26931106
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 23 07:24:24 2012 +0200
+
+    Additional bullet/numbering control in Paragraph Style widget.
+
+commit c0464c80a29a35c3febd550cfb3938fa501b0071
+Merge: f7aff26 7018197
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 22 15:32:10 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into numeration
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+    
+    Initial support for bullets in paragraphs.
+
+commit 68b0eef2e4f1398d75e486543458fdb6f19dc376
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 20 20:47:00 2012 +0200
+
+    New first line offset option - first line of frame (column) can be
+    shifted to nearest base grid line.
+
+commit c458dfc90c41f29a71ec553c9ca04856f86fdd18
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 20 14:52:11 2012 +0200
+
+    Apply paragraph style does not remove local character formatting.
+    Clear parapgraph style clear character formatting only, does not reset whole text to default style of text frame.
+
+commit 8d921385c73ac782b2976c16efd25204ff731101
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 20 14:02:50 2012 +0200
+
+    Fix for layouting text (specially Drop Caps)
+    "Omit Paragraph Styles" during importing ODT files.
+    "Clear On Apply" property for paragraph style.
+
+commit 325185918e1cfbd5b243607a47f7f0e65d1fb08d
+Merge: 8557879 c6e23ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 20 10:06:18 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit 67b265ebc4541929786a707634bcbe8abdbc81a9
+Merge: 9b25574 319e5ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 17 14:15:08 2012 +0200
+
+    Merge branch 'master' of scribus.net:scribus into footnotes
+
+commit 9b255746ae977b02c790ef8eefdc31025edc3b88
+Merge: ff07742 019010c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 17 14:12:46 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit ff07742190ca2a271d27a79db23e3fe0f31c0906
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 11 14:07:38 2012 +0200
+
+    CMakeLists.txt.user with project settings
+
+commit 8557879d8dbd438b7d2cebb4795e85bc3634a0ab
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 14 15:50:07 2012 +0200
+
+    Fix for autoheight for notesframes with integer precision.
+
+commit df252de700f477641c98d5fdcfd9ddbcfc341e1e
+Merge: 0a1ffc9 02e009c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 14 15:08:43 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/pdflib_core.cpp
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 02e009c18156a7229408fa4e6ee993a96173d9bc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 14 14:37:45 2012 +0200
+
+    update canvamode_imageimport file from trunk
+
+commit 21d1898c904a47355316ebdb9c140e46b1c018c6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 14 14:34:09 2012 +0200
+
+    add dic file
+
+commit 4a33dcdbf40b77253b0f47b6ed2b21eef50f553f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 14 14:32:08 2012 +0200
+
+    removing dic file
+
+commit 319e5aef14d6f11fdb5caa92257343a1976bb0d5
+Merge: 2c9580b 8b49818
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 14 08:27:50 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk
+
+commit 73b1fada626f04188882285fa55fa6e486d0b4b4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 15:45:39 2012 +0200
+
+    Fix for 11031: deleting endnote mark in endote area does not correctly leave edit mode
+
+commit b80b076b8fe3ba173cbfa73b816ad4d3c5f286b3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 15:13:56 2012 +0200
+
+    Fix for 11030: frame is in editable modus but there is no cursor
+    Fix for undo/redo for edit notes style.
+
+commit 905eb2444ad750f0d479b7359a0c058d325e092a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 14:32:51 2012 +0200
+
+    Simply import footnotes from ODT file.
+
+commit 9e8fe5d1fe2b42b61bb02de903370307227a79b9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 10:35:40 2012 +0200
+
+    syncing
+
+commit bad48f3ee57dd09632baee66325992ce55249e3d
+Merge: 0c0f56c 2c9580b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 10:34:41 2012 +0200
+
+    Merge branch 'master' of scribus.net:scribus into footnotes
+
+commit 0c0f56ceb187f3b11a07839e0438fa2ec6f1cc10
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 10:24:21 2012 +0200
+
+    update dict files to svn
+
+commit 18347714fb26dd503c06c32b31f8a902c7aa0eda
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 10:15:25 2012 +0200
+
+    Fix for 11021: "merging" frames duplicates footnotes in the second frame
+
+commit 389f62c8cb6c97156909eee34c2c8a226ad98bd5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 09:07:54 2012 +0200
+
+    Fix for 11022: crash after having deleted a endnote.
+    Fixing undo/redo inserting note.
+
+commit a875e6ea5ef64eddc6e4822454dbf9bbfa19e32d
+Merge: 005457d 8b49818
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 13 07:55:24 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 005457de77dfd4a63371aee5802642bc3ea808fd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 10 08:54:47 2012 +0200
+
+    Fix for 11024: when an endnote frame is created on the same page as the endnote mark, create it at the end of the page
+
+commit d5afaac9ea0f7f1f6d0db2bc7a25779d990921fa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 9 14:31:49 2012 +0200
+
+    Fix for removing notesframe after deleting last note in it.
+
+commit 654b594cccf05f5a9fef59d8b1c73b2c827400e0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 9 10:48:01 2012 +0200
+
+    New solution for remeber noteframes coordinates (user can move noteframe and its position will be restored if noteframe will be deleted and then recreated)
+
+commit fbc719a763e2c964d1db3126c1755e261e3bd84d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 8 15:53:04 2012 +0200
+
+    Try to restore position of noteframe while undo deleting frame with notes
+
+commit 52605e79c64e0812a43a128c6d9c3583da4f58bd
+Merge: fb3e2aa 5903993
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 7 10:22:59 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit fb3e2aa47d7ff1d01c25c3dc7561984108112e15
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Aug 7 10:22:21 2012 +0200
+
+    Fixing notesframes removing.
+
+commit 5903993b3a0cbb6a8c5ed0feec2bd3581e3d6021
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 18:12:42 2012 +0200
+
+    Fix for welding items moves while changes of width.
+    Fixing updating notesframes with width fixed to master frame width.
+
+commit 696b711e04d0bba00458556d9ac4d0fdaae4c108
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 14:22:48 2012 +0200
+
+    Fix for 11006: jump to notecall click area.
+
+commit c263b443b8e3616f4af4bbaec4f1808e612398d8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 13:32:52 2012 +0200
+
+    Unifying behaviour after Backspace and Delete key pressing in text frame edit mode.
+
+commit b2800d357dabaa2f3f56c60998e6fa208d5a6439
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 11:08:51 2012 +0200
+
+    Fix to not to update welding point for noteframe.
+
+commit e6df01f27dd2393f6fb60ae850f1ba352eed94bc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 10:52:50 2012 +0200
+
+    Fix for update notes after undo/redo for deleting notes.
+
+commit f6ad9efc4bcc4dfcd4a7240a6e65d8a9edea88b2
+Merge: 3f9c1d4 8a1de25
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 10:00:29 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit 3f9c1d4a56955428315cf2deece35afb8f4cfa4f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 09:58:52 2012 +0200
+
+    Fix for 11003: crash when editing notenumber reminder in note
+    Stopping view updates until notes were processed.
+
+commit b1593bf20215f3a4433b0ca5f522b03c781e6dda
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 09:09:09 2012 +0200
+
+    Removing unused variable.
+
+commit ee7604152a8085c5214a2be9ccf5455711b8772b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 09:08:26 2012 +0200
+
+    Fixing update notes numbering after redo inserting note.
+
+commit d68d1155bc0a96958df7313b5bb95fc816986e67
+Merge: 25e6579 8a5abaa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Aug 6 08:11:43 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 8a1de25d56b9b8184fce46e283d30f1779919397
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Aug 4 17:39:35 2012 +0200
+
+    Fix for removing empty notes frames and updating notes nums.
+
+commit 76a97ba2b16ddbbbddf0322fd703cb1e973a13ea
+Merge: 25e6579 8a5abaa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Aug 4 15:54:05 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 0a1ffc91f889f7550b2439770cc04d9485818535
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 3 15:58:13 2012 +0200
+
+    Try to improve handling of long text in linked frames.
+
+commit a67fd69416299ad00e190370a73d4e2de1489209
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 3 11:35:30 2012 +0200
+
+    Try to speed up text layouting routine by refactoring some double variables to int.
+    Try to make some additional information during loading docs.
+    Removing unused variable.
+
+commit f10c2202ee7873a399794ae6b31314f5ce11ebac
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Aug 3 08:50:56 2012 +0200
+
+    Add hyphenation controll to paragraph style.
+
+commit 17f1a8a035d2b4236e41e3e51d9d8a76120f7799
+Merge: 988afa7 25e6579
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 13:22:36 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusview.cpp
+    	Scribus/scribus/serializer.cpp
+    	Scribus/scribus/serializer.h
+    	Scribus/scribus/util_text.cpp
+
+commit 988afa7f79c41ec4b9a04abd4cf448579cde7824
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 13:18:45 2012 +0200
+
+    Fix false warnings for EPS/PDF files.
+
+commit 2c9580b39167e554a8540231d6f0d7314a8beebb
+Merge: 1a1374a babfa1b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 12:28:17 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/text/storytext.cpp
+
+commit 1a1374a48bc54f4a19d9a84b03b5420dbc090d5a
+Merge: ce9cc3f 053cf91
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 12:27:02 2012 +0200
+
+    Merge branch 'master' of scribus.net:scribus
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+
+commit 7bb458e3c1e6f6331e146ca495ef665805ec8cb1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 10:16:54 2012 +0200
+
+    Fix for false warning for EPS/PDF files in imageframes.
+    Fix for skipping lines when moving cursor down.
+
+commit 25e6579a6fa463caa9717542828c93f043051242
+Merge: 136144d babfa1b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 08:15:23 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 136144daea4881797e5b5d25b9c31fb252947d33
+Merge: ec4efb1 f514561
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 08:14:51 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit ec4efb1c9f350d625c45f74ee0f46f84fcebaf5d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 08:14:43 2012 +0200
+
+    resloving conflicts
+
+commit f844d89881416ab949ab33df37cfe11552fed5b7
+Merge: e898b2b a3d83a9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Aug 2 08:13:22 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/cpalette.cpp
+
+commit e897b736a726f67c7a80553818983e99a4bac357
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 1 15:01:06 2012 +0200
+
+    Fixing preflight warnings with add switch entry to menu and color setup to preferences.
+
+commit 03eee64dbab04d6bd8ecf7ec5cfd4544923efeec
+Merge: 0a06885 a3d83a9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Aug 1 11:48:18 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/cpalette.cpp
+
+commit f5145616b43e9195ba988e9dbfc70b32f1b26a19
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 31 19:59:08 2012 +0200
+
+    Fixing undo/redo for copy/cut/paste frames with notes.
+    Removing unnesessary setting up of doc flags.
+
+commit f8b0d742bea57a00d90d318a72c03c3075a1a891
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 31 18:02:42 2012 +0200
+
+    Fixing compilation problems after previous commit.
+    Fixing undo/redo for cut/paste frames with notes.
+
+commit e898b2bce898ce438554945cc961528a17197118
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 31 16:01:55 2012 +0200
+
+    Fixing copy/cut/paste frames with marsk.
+
+commit 1ac663896754a4dbc2d6119c7266a1428e56f838
+Merge: f8b5dad 98f3345
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 31 13:30:41 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+
+commit 0a06885905cf577fab8beb7716309d6a2d3893e7
+Merge: 6a9c51b 24d0f1c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:32:12 2012 +0200
+
+    Merge branch 'reverse' of scribus.net:scribus into ece15
+
+commit 6a9c51b8dc6e6ff805f946fac55a02780201a468
+Merge: 4d0644b 479a21b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:32:02 2012 +0200
+
+    Merge branch 'styleshortcut' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribus.h
+
+commit 4d0644bd4ec637f07122d7c742f1fcb54ca33f6d
+Merge: 4a15310 59fbf2c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:29:13 2012 +0200
+
+    Merge branch 'virtpagenums' of scribus.net:scribus into ece15
+
+commit 4a153105b4beaea75d850ca8621372e8610620c0
+Merge: a306dcc d9fef68
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:28:56 2012 +0200
+
+    Merge branch 'unlinkcut' of scribus.net:scribus into ece15
+
+commit a306dcc5c308820483c9199136ecb352652b40da
+Merge: f0ff21b 7abc7ef
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:28:14 2012 +0200
+
+    Merge branch 'preflight' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/pageitem_textframe.h
+
+commit f0ff21bd9ddef320463ba6be0307a10dc8b29955
+Merge: 789d7cf f8b5dad
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:23:43 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into ece15
+    
+    Conflicts:
+    	Scribus/Scribus.pro
+
+commit 789d7cf59160b040db081a3b6d30fdb097711c08
+Merge: 21794db bd3fcfc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 14:16:04 2012 +0200
+
+    Merge branch 'ProPal' of scribus.net:scribus into ece15
+
+commit d9fef68f16527a9aaafc2fe952ee23947b0901fc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 13:21:33 2012 +0200
+
+    redone
+
+commit 8f174d30bbfd7a99ddc2e8b098317a7b0433889b
+Merge: 9de9049 21794db
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 13:20:58 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into unlinkcut
+
+commit 9de904944f4516db0b7779c1990eca690b147053
+Merge: 7e687aa 1c550fe
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 13:20:08 2012 +0200
+
+    gitignore
+
+commit 7e687aa74fc88b03cbc21dd61dc32bd74156639e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 13:16:50 2012 +0200
+
+    Make ESC does not deselect item with Link/Unlink tool.
+
+commit f8b5dad338b31eead03d6d4121c1c10c4952abf8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 11:57:12 2012 +0200
+
+    Trying to fix some update/refresh issues.
+    Fix for copy/cut/paste footnotes with undo/redo.
+
+commit d7727764120b49917ea295b4abd38e602f26bd61
+Merge: 8c6e0cb 21794db
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 30 07:13:52 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit 8c6e0cbe82cb75e8037e0860a25829f61fa47e56
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 27 16:00:00 2012 +0200
+
+    Fix for 10958: redo 2 notes to crash
+    Fix for 10949: cut and paste of footnotes does not work correctly
+
+commit e22540a506f297bc760cae52a0acf59d5ff2f40c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 27 11:55:30 2012 +0200
+
+    Add languge changing string for Notes Style Editor.
+
+commit f6db00ba482754853adaf0313aeea2566230c286
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 27 11:21:33 2012 +0200
+
+    Fix creating undo for moving unwelded notesframes.
+
+commit 0683a32fd240f4c2bc7da7d4d2eed5f05b0ad86d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 27 10:40:57 2012 +0200
+
+    Make empty not deleted notes frames drawed properly.
+    Refactoring PageItem_NoteFrame::autoRemove() into PageItem::isAutoNoteFrame().
+    Fixing deleting notesframes which are not for auto-removal.
+
+commit b28e0b4a342ff7b43cda2467bb07e9d7edd35b9e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 27 10:14:51 2012 +0200
+
+    Avoid inserting chars into noteframe before first note mark.
+    Avoid deleting text form empty note frame while deleting it.
+
+commit 72403fa4fa218fbf0712c2ce29267c1009a8b439
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 26 15:58:30 2012 +0200
+
+    Fix for undo deleting notes frames witch are not automaticaly deleted if empty.
+    Fox for redo iserting notes (additional PARSEP)
+
+commit 083ded065b51328a59f3d728113a12c9149bc544
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 26 13:45:01 2012 +0200
+
+    Fix for crash with text selected in getTextSaxed.
+    Refactoring constructor and destructor of PageItem_NoteFrame as private for use only in doc->createNoteFrame and doc->deleteNoteFrame for better controll of inserting/removing notes frames from doc maps and lists.
+    Removing some arguments as used only with default value.
+    Refactoring nsManager to nsEditor.
+    Notes Styles Editor set focus to changed style during undo.
+    Fix for undo on Notes Styles changes.
+
+commit 636938e214b0abbcd23fc4dba3456e14c6cd8291
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 20:06:36 2012 +0200
+
+    Fix for change of note mark`s label after it change during update
+    numbering.
+    Fix for endnotes.
+
+commit d704f5e06602cc0b7b742311bee721586d3853b9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 15:59:18 2012 +0200
+
+    Removing unnecessary deslection.
+
+commit 981a2968b81eaaa923c0a96c1a223e002ffa88b1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 15:58:25 2012 +0200
+
+    Fix for get master from for endnote.
+
+commit bf1b36456c57c67bbfdfeaabe1c7688df6a9080e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 15:43:46 2012 +0200
+
+    Fixed crash for undo inserting note if noteframe is selected.
+
+commit 66f8e83ef34c68929eaad6a66ac74ccae53700b0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 14:31:13 2012 +0200
+
+    Fix behaviour when txt is empty after deleting note mark. (delete all notes frames for empty frame if any exists).
+    Change notesframes update condition (update moved to master page only if notes list is empty, in other case notesframe can be updated)
+
+commit bd3fcfc81ffaf269464f0aef3a6e2c963ca839be
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 11:47:57 2012 +0200
+
+    Add Text Margins tab to text palette in PP.
+    Enable reset to default value if Optical Margin in PP (Reset button now works).
+
+commit 598597f69de862c013118def20e6fdf373e739b7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 07:27:09 2012 +0200
+
+    Sync with trunk.
+    Small code cleanup.
+
+commit 4f21201db33ddbc9ac9d6b00ea7617f8a631ac97
+Merge: 7a53c0a 2a584f7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 25 06:41:04 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 7a53c0a2c3994c48a5a63115db6d4551b0c10ba0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 24 15:45:36 2012 +0200
+
+    Fixing wrong update of notes text from noteframe for empty notes.
+    Removing storing in undo step pointers to item that are recreated while undo/redo.
+    Removing unnecessary setting flag_notesChanged=true.
+    Fixing some refresh issues.
+    Fixing undo for notes with marks inside text.
+
+commit a95ee3955883730c4509a4aef78e2f4c08a8e4fa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 23 15:54:03 2012 +0200
+
+    Fix for 10915: Footnotes: crash when deleting the footnote frame
+
+commit 22ff7fb29df8a9dead4fa38ee5013293d93763a6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 23 15:35:19 2012 +0200
+
+    Removing assigning values to deleted marks in TextNote destructor.
+    Refactoring NotesStyle constructor. Removing unused function.
+    Changin way how mark pointer is restored during undo.
+
+commit 57fd572f575b96e23e2a6c4004948c186e29d565
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 23 14:30:54 2012 +0200
+
+    Resolved 10902: Footnote style (on inserting notes last selected Notes Style is rememebred)
+    Refactorin notes set to notes style.
+    Make actions in Notes Styles Editor undoable.
+
+commit 897ad5d49ac9810be6dda54c818dbed627b07c7c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 23 11:19:03 2012 +0200
+
+    Refactoring NotesSet to NotesStyle and Notes Sets Manager to Notes Style Editor with refactoring all local variable like nSet to nStyle.
+
+commit 463bce576be4b1eda415fdd962e9662b3c31b352
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 23 08:47:51 2012 +0200
+
+    Refactoring default remove of notes from text to default.
+    Removing compilation warnings.
+
+commit ab5fb79da1f30e7b0ab3dde619c8b313b347d9ff
+Merge: 37e607a f0dd0d8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 23 07:44:05 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 37e607ad954119a5409c4f4cedb4ef83c7fb75ab
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 20 15:51:01 2012 +0200
+
+    Remove menu entry for Update Marks as it provide check for marks on each selection change.
+    Fixing infinitive loop on autoHeight endnotesframes.
+    Fixing crash with endnotes frames and autoHeight feature.
+    Fixing infinitive loop of searching marks in text while erasing them.
+
+commit 069436569577f38c8c3a57d96b941552283acd5b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 20 14:13:08 2012 +0200
+
+    Fixed 10903: resize footnote.
+    Disable changing cursor to resize arrows if resize is disabled.
+    Fixed NotesSetsManager - saving changes overwrites name of all sets.
+
+commit dc77241a5d7f5b92aad675e47782fa94e95dcc28
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 19 15:06:52 2012 +0200
+
+    Fixed 10901: I can't delete a variable text.
+    Marks Manager actions are undoable.
+
+commit 9ded521932b31fde3855cc9bad7c96a9692839b4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 19 12:16:36 2012 +0200
+
+    Fixed 10900: Crash when removing footnote inline
+
+commit fca9e41e1f24f843668decc6e51ef77ae541d704
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 19 11:28:29 2012 +0200
+
+    Fixed 10899: crash when editing footnote after undo (changes in resize/move/rotate undo actions).
+    Change flag_notesChanged to private and provide public methods to get and set it - for tracking of changing this variable purposes.
+
+commit 9f44e22e5b7cde8480b6531b8deaba022778a577
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 19 08:11:47 2012 +0200
+
+    Ignore urelated files
+
+commit 22a65eaa10f65286cd7b773868d65b5ad3f4f138
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 18 15:30:40 2012 +0200
+
+    Fixed 10892: Footnotes: after creating a new set, crash when inserting a footnote.
+    Try to resolve refreshing issues.
+
+commit 2f1accd94b44a637a602144397ddbbbadf920576
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 18 15:11:28 2012 +0200
+
+    Fix for 10895: Footnotes: the footnote mark should be a "control character".
+    Fix for 10891: Footnotes: restore not complete after full undo.
+
+commit d21c9c2b50473481c82101c3dc2e4bd39451ef74
+Merge: 1f2553b f7280dc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 18 07:35:59 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 1f2553b66d0bdbb62042fd77d9456a767b3e9ea8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 17 19:36:22 2012 +0200
+
+    fixes for marks undo
+
+commit 618ca51c4cab0fd19eaa6a73b2de6b364fdcb8ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 17 15:58:55 2012 +0200
+
+    Undoing marks actions. Issues with refreshing view.
+
+commit d3f98291a17e97d594a2033f0544f11aa322f35a
+Merge: cf51f9b f37b1b0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 17 08:08:18 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit cf51f9b5f4d584715542613f5d2d5c905dacaf36
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 16 19:36:05 2012 +0200
+
+    delete text with marks with undo
+
+commit c8d277e525a65d0f604e1235a252497c23ebb893
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 16 15:58:57 2012 +0200
+
+    deleting text with marks
+
+commit 9457069ba9e4140056203ac122d4b4004e2293f1
+Merge: cd143e7 1329183
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 16 11:05:30 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit cd143e7516a05d12acbb59102903b95eae7b1fb1
+Merge: f3226e4 2de1b26
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 16 09:44:53 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+
+commit 1329183b2d7e7914f255529c5fca9ec212b041de
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Sat Jul 14 20:20:48 2012 +0200
+
+    Fixes for footnotes with undo
+
+commit f3226e4a711e0bf8bf2571bdd70fd2f3f4d42a59
+Merge: edfcb6f b9fb96f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 13 16:02:31 2012 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/pageitem.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/ui/cpalette.cpp
+    
+    Further work on undo for footnotes.
+
+commit edfcb6f5fb00d34fb8344c8bb4321aba7d35f690
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 13 14:10:41 2012 +0200
+
+    Fixes for deleting footnotes. Removing GUI warnings while deleting footnotes.
+
+commit 25a77eef820846bea394936481c593da7f6b4791
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 12 15:58:29 2012 +0200
+
+    Further work on undo for footnotes
+
+commit 8f1f9a3a054046efe4b3fa6b202911d7c18b57eb
+Merge: 63abd33 f880b9a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 12 01:58:48 2012 +0200
+
+    Further work on undo for marks
+
+commit f880b9a185dd1e2af33d4732cdd73b7c78be1650
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 11 15:36:01 2012 +0200
+
+    Introduction for undo for marks
+
+commit 808b86836be2c392eccf38ce74b8f850552524f0
+Merge: 7ee978a 05b20c4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 10 12:49:46 2012 +0200
+
+    Update to current trunk
+
+commit 1c550fe6b93e2bbc844991f1373d1f53f966e53f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 10 12:46:03 2012 +0200
+
+    Add possibility of inserting empty text frames inside frames chain.
+
+commit 2843982e5074654df4a6884e8069229538768811
+Merge: 5f6c77e 05b20c4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 10 10:39:40 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into unlinkcut
+
+commit 5f6c77eac468127e7cec36cff6ecfe54591b0e4b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 10 10:38:49 2012 +0200
+
+    Fix for undo linking frames when each has a text. Removing template for multiple items undo state - not used anymore.
+
+commit 1c0e9477cbd8d890febd0d1ff4864c12e6c762a4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 9 16:02:43 2012 +0200
+
+    Changes in unlink_with_text functions
+
+commit 7ee978ad56f58094162acf173273364d55162a8e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 9 08:57:16 2012 +0200
+
+    Scribus.pro.user
+
+commit c03582970b0b0de91182d99651d793b54809b5eb
+Merge: 789835d 9947aaa
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 6 15:32:18 2012 +0200
+
+    Merge branch 'footnotes' of scribus.net:scribus into footnotes
+
+commit 789835d8bff82127cbe943499af348d5c1af9170
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 6 15:31:20 2012 +0200
+
+    Update to trunk and apply Chelens patch for undo deleteding chars.
+
+commit cbc8ddf4df50ef76f7b345aa93a1d6b2fbc2150b
+Merge: 3009ec9 0b7601a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jul 6 13:06:11 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into footnotes
+
+commit 3009ec95b4021bcd4f289106ac6503f23ca8f033
+Merge: 25cbe3e 7c0076c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 5 08:32:22 2012 +0200
+
+    Merge branch 'master' of scribus.net:gsoc12ux into footnotes
+
+commit 25cbe3ed721b718f240e3a3875f51a63d72bb04d
+Merge: 8fd99ea 9555423
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jul 5 08:32:03 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/cmake/modules/FindPOPPLER.cmake
+    	Scribus/scribus/undomanager.cpp
+
+commit 63abd33e711b564c0d4f8e6f016c3bda7c830d08
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jul 4 17:10:26 2012 +0200
+
+    scribus.pro.user update
+
+commit 32b389e374a9c8d956638b1bf01568046cf0e5d1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 3 11:23:43 2012 +0200
+
+    Make widows/orphan controll working in columns. Add on-the-flight preflight warning as additional text background color.
+
+commit cbf595ae1365776f9707c8b3e36b3661a8fd3111
+Merge: ac02ba1 0d0a57a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jul 3 11:21:46 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into preflight
+
+commit 9947aaab7c336a4949f26bc79d7ee13cba0d1daa
+Merge: 86845ab 7c0076c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 2 22:27:55 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/gsoc12ux into footnotes
+
+commit 86845ab85ca74fd7fd9be99bca6cac23ec92f7e7
+Merge: 8fd99ea 66aef60
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jul 2 22:26:38 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into footnotes
+    
+    Conflicts:
+    	Scribus/cmake/modules/FindPOPPLER.cmake
+    	Scribus/scribus/undomanager.cpp
+
+commit ac02ba110e5bbe96041f975a51d5c75e26b8aaf0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 28 14:13:03 2012 +0200
+
+    try to make widows/orphans control workin inside of frame
+
+commit 8fd99ea18d6964106737db7749496d7e1feb1bba
+Merge: 87f0430 ce9cc3f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jun 27 13:47:24 2012 +0200
+
+    Merge trunk. Change in insertNote method for simply insert note at end of noteframe text.
+
+commit 479a21bd697995109ccce61898315d545ec025a3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jun 27 09:53:48 2012 +0200
+
+    Shortcuts for styles enabled and working.
+
+commit 87f043046284f3f3a99148a8e7fffde98ab7d777
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jun 27 08:44:28 2012 +0200
+
+    Scribus.pro.user
+
+commit 2b092bc1345a045573e132b1bbc9130ed88636d2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 26 16:02:16 2012 +0200
+
+    Update to current trunk. Fixes for deleting notes.
+
+commit 59fbf2c39863a3bc522a4bc8ac507a49cb7451ae
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 25 09:26:31 2012 +0200
+
+    Change of tool tip to "Go to page" instead "Select current page"
+
+commit 31f1b9fb99f7baba0c7ab15312f162a030b4eb4f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 25 09:20:04 2012 +0200
+
+    Show "virtual" page number only if it is different than "real" page number.
+
+commit d5b4433be8268a9a8e548dd33c33dd6fd4a7e8c7
+Merge: ce00266 da6620b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 25 08:27:46 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into virtpagenums
+
+commit f38395477b6a7238eefab79aedd715c40ad326ef
+Merge: 3b8a82e da6620b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 25 08:19:41 2012 +0200
+
+    Trunk merge 1 step
+
+commit ce002664e952e7e3f1daf91ce1d22a09c8f56f58
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 22 15:46:16 2012 +0200
+
+    Init work on page selector show "virual" page number reflecting section numertaion settings.
+
+commit 24d0f1c415ab6f5d5a5ee6249fdbb01a9417087f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 22 14:52:31 2012 +0200
+
+    Reverse page numeration completed.
+
+commit f7aff26bc60cc404158ce8c4faf9aca39e23f249
+Merge: 8141dc0 4ee91cc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 22 07:40:49 2012 +0200
+
+    Merge branch 'numeration' of www1.scribus.net:/scribus into numeration
+
+commit 8141dc0578462de2bc41bc00a927fb394031a417
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 22 07:39:10 2012 +0200
+
+    Numeration class progress.
+
+commit 3b8a82e60c7d8234ee89f0d4cb3ceceb8bfb175a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 14:41:42 2012 +0200
+
+    Merging trunk4
+
+commit 91ba247c335d976f43e17771bf934d18643d71d3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 14:39:32 2012 +0200
+
+    Merging trunk3
+
+commit e1eba4e68419fd6ccaa2a0694d643d6bf1407f44
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 14:36:45 2012 +0200
+
+    Merging trunk
+
+commit 71ad38bdf583233a890fe4de57fbcdc76101c231
+Merge: dc68bfa 79046bf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 14:15:08 2012 +0200
+
+    Merge trunk
+
+commit dc68bfa873d391743f931cdbffdc26dfda6de9bd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 13:52:31 2012 +0200
+
+    Fix crash on linked frames with empty itemText. At the end invalidate next frame in chain (but without forcing layout) if MaxChars changed.
+
+commit 4ee91cc8b7c414c0e01088bd8580b6c80b48dc9b
+Merge: a276cb7 a4f1d7a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 08:37:19 2012 +0200
+
+    Merge branch 'numeration' of scribus.net:scribus into numeration
+
+commit a276cb777f47091b4585bb44643e344bd882ac3e
+Merge: 723b19f 79046bf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 08:36:44 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into numeration
+
+commit a4f1d7a197fef3bee01477fb63ecc59cdfef643f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 21 07:55:30 2012 +0200
+
+    Class Numeration
+
+commit 50223b3bc429cfa61066c48955316f91ba98ceb0
+Merge: 723b19f ddb5dee
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jun 20 19:22:23 2012 +0200
+
+    Merge branch 'master' of git://scribus.net/trunk into numeration
+
+commit cea7b78b7cd55463a09e14dfae0cd6bec106c0d4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 18 12:18:46 2012 +0200
+
+    Changes in project files
+
+commit 5e740c3688b4506b8797c257b54fb70422ac1607
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 18 11:02:35 2012 +0200
+
+    Sync with r17580 - 5th turn
+
+commit ccf5fb139eaf07593738902e4d17d8925d113dbe
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 18 10:59:55 2012 +0200
+
+    Sync with r17580 - 4th turn
+
+commit c03334127f0100dfe4eadb52e9465d976d4b1e79
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 18 10:57:28 2012 +0200
+
+    Sync with r17580 - 3th turn
+
+commit 1580a50cae6d8a9bca90be647f9fa7f240a4f5f3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 18 10:52:15 2012 +0200
+
+    Sync with r17580 - 2nd turn
+
+commit 237dd0e61a9efc2857ac14c80218810cc9dbb268
+Merge: faa8cc8 bea5ac5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 18 10:36:31 2012 +0200
+
+    Sync with r17580
+
+commit faa8cc8a4002ebf678545c554cbe33f423a9b91c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 15 15:47:27 2012 +0200
+
+    Small fixes in PageItem_TextFrame - MaxChars sometimes was "a +1" but all other is just a. Removing one unnecessary call of update marks while editing text. Add better layout of first empty row in frame (only with PARSEP).
+
+commit cce5fd519bc49e5b35cd821c41fd309e8ae9d175
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 15 13:19:33 2012 +0200
+
+    Fix possible crash while deleting notes marks from text.
+
+commit 010bdf34ed362f49f75c206e63869704dbe46330
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 15 09:48:16 2012 +0200
+
+    Fix propagation of chenge of text style from master frame to note frame.
+    Fix problem with linked frames.
+    Fix problem with to many marks and notes updates while simply text edition.
+
+commit b822e55046b74af449d43de99d2081071305fb40
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 14 11:52:23 2012 +0200
+
+    Merge from trunk
+
+commit e89d0ce4505455d351b72426f6dc54fbde3dbc93
+Merge: 3c7eb33 a676d54
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 14 11:38:12 2012 +0200
+
+    Merge branch 'master' of ssh://oferuje.pl:22789/home/git/trunk into footnotes
+
+commit a676d542e7041a905301ee46cce5e59bf62054e0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 14 11:37:31 2012 +0200
+
+    Update from SVN
+
+commit 3c7eb33fab0a345c968b8bc999f0328498a44cd6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Jun 14 10:33:44 2012 +0200
+
+    Change (mark->getType == type) condition to mark->isType(type), fix small condition mistake in ScribusDoc::updateMarks()
+
+commit ed94e4e738908e5021ed7b032d5b3f6c3632ddda
+Merge: cb0b293 a78f167
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 12 10:49:19 2012 +0200
+
+    Merge trunk into footnotes
+    Resolving conflicts
+    Removing code changes not required for footnotes feature
+
+commit a78f1676d3bfe54774d2c739bf39fefd86135f16
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 12 07:23:12 2012 +0200
+
+    SVN update
+
+commit cb0b2932947f4fa3ee8b6952023666993f4d547d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 11 14:57:35 2012 +0200
+
+    Reaply lost commit with better styles support by notes frames.
+
+commit 4e39dd29760c9dee0ae81bc2859c3cd5700a2eb7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 11 14:29:21 2012 +0200
+
+    Repair wrong commit
+
+commit fb58a613332dcdf3ffc7de69dddae34a62c3075e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 11 11:29:13 2012 +0200
+
+    QtCreator project file change
+
+commit 63e722c86f6dfb1afe17bcd495841ffa8c9cfb3d
+Merge: 19af372 59e5045
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 11 07:59:29 2012 +0200
+
+    Merge scribus.net:scribus into footnotes
+
+commit 19af372b7d6a355e770fb83b3eef94445a01a030
+Merge: e7d0164 446e6be
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Jun 6 07:45:17 2012 +0200
+
+    Resolve conflicts
+    Merge branch 'footnotes' of www1.scribus.net:/scribus into footnotes
+    
+    Conflicts:
+    	Scribus/scribus/scribus.cpp
+    	Scribus/scribus/scribusdoc.cpp
+    	Scribus/scribus/scribusdoc.h
+
+commit 59e5045630874d404ed1b97f6567e880c29a9dc4
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Jun 5 14:44:52 2012 +0200
+
+    xxx
+
+commit 446e6bec705c054fe0115794a66346fe19d64453
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 4 10:06:54 2012 +0200
+
+    Fix for unwanted delete of variable text mark
+
+commit c61cfd78f48834188cf0c12fd439d350ed9890b0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 4 09:23:07 2012 +0200
+
+    Resolving conflicts
+
+commit df01eb900f7cf60d34cf45d974b51d50f058c694
+Merge: a806a77 781f7a8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 4 09:08:31 2012 +0200
+
+    changed files
+
+commit e7d016468a6c9b890298fa7d0cde5a1f2ffc7e12
+Merge: 3051390 a806a77
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 4 07:25:22 2012 +0200
+
+    Changed files
+
+commit 3051390c4432e0af030cf7b30b6b4313260bac07
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 4 07:22:43 2012 +0200
+
+    Changed files
+
+commit 1774d4d7326ff26303766042825f80342eac1720
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Jun 4 07:14:51 2012 +0200
+
+    Changed files
+
+commit a806a772c8b7f687eaa407ecd4f402cb91c16fbb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 1 13:40:25 2012 +0200
+
+    Fix update text after variable text definition changes.
+
+commit bdaf67e038bff92e9c326c72a789e7c028e4bbb9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 1 13:16:44 2012 +0200
+
+    Fixing updating styles for notesframes if any style is set in notes set. Fix for initial update notesframes style after loading doc.
+
+commit f3e35d6d46a5ccdf4b854e8f6719121e888068cb
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Jun 1 11:50:22 2012 +0200
+
+    Fixing propagation of styles between master frame and notes frame.
+
 commit 6fe3fa794b274ca24da97240d52ea423131eab5d
 Author: Cezary Grabski <czarek@czarek.(none)>
 Date:   Fri Jun 1 10:19:19 2012 +0200
 
     Footnotes feature initial commit
+
+commit 781f7a8050ec34a44b7a0d0cad699b0edfebea63
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu May 31 19:46:27 2012 +0200
+
+    Removing renamed files
+
+commit 82c694529586a0a4f63c9469918833751eb86819
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu May 31 19:14:22 2012 +0200
+
+    new branch
+
+commit 6c33728a2905496644492c947e4bf8a5f264b314
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu May 31 19:04:36 2012 +0200
+
+    new files
+
+commit ab697cee99d96609edabce0b48a57bcc532060d7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu May 31 19:03:26 2012 +0200
+
+    Footnotes current state - 30.05.2012
