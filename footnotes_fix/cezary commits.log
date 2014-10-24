@@ -12,11 +12,263 @@ Date:   Wed Jan 29 10:59:47 2014 +0100
 
     SVN sync
 
+commit 25152f43d3e31074aa8d1bafd2505f01b8ecc25e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 15 15:47:54 2013 +0100
+
+    Further fixes
+
+commit 17fbc3286daa1d8bf72fbc05fd10d04538621a64
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 15:48:21 2013 +0100
+
+    Fix for cutting text with notes marks in noteframe.
+
+commit 85afcb3e637f3515c8ab6b1992c179a86ad76cdd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 15:24:44 2013 +0100
+
+    Fix for undo for notes and applying character style to notes marks and
+    whole noteframe.
+
+commit 9a01568a8d0b6d6f6c0c4d69ee1cfc603c84aaa0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 15:19:40 2013 +0100
+
+    Small fix for starnge problem while changing edited item by mouse click.
+
+commit 28b8058368d67a9e84d02302cb20e6962b26c25b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 09:57:01 2013 +0100
+
+    Fix for applying neighbour charstyle for inserted marks.
+
+commit 6fa65065ea639c9281854de77424134f1f8f3391
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 14 09:49:50 2013 +0100
+
+    Fix for saving and resotring characterStyle for note`s marks
+
+commit 7074f321a0ada2f2099bf6bc98ec797bd66c8866
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 13 16:03:33 2013 +0100
+
+    Try to fix restore charstyle of note mark on undo deleting note.
+    Fix for deleting notes in linked text frames.
+
+commit b5d0a62d5ef338147ece7d5f6db49b2b4083e4ad
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 13 16:02:00 2013 +0100
+
+    Grouping decalration of undo functions for notes and marks.
+
+commit dead5c2733eccce74933cc301b617f807b867b3f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 15:46:32 2013 +0100
+
+    Fix for setting number for notes marks in noteframe.
+
+commit 9ad574de153731692e52d44250f4958e2c31abcd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 15:45:42 2013 +0100
+
+    Fix for wriong calculation of selection.
+
+commit 91132746ffbd07b729e4b6f63148c6012b88d3da
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 15:45:05 2013 +0100
+
+    Small improvements in code
+
+commit dd28df1e27e9859b38e517334ffe00c23cd3df5f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 09:46:03 2013 +0100
+
+    Remove notes in reverse order on deleting note frame.
+
+commit aafd83166d84c1587cac9911511167ddb481459b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 08:42:05 2013 +0100
+
+    Fix for undo/redo deleting note mark. Removing some debug messages.
+
+commit 46d29f5a7ece1f92326bc0b4901e19b5e23df8bd
+Merge: 13af8f1 8fe4074
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Nov 12 07:41:38 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 13af8f1669e4fdbf8e4474f03e73f7e76fc73bd9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:49:43 2013 +0100
+
+    Further work on updating notes numbers on undo/redo
+
+commit 741599e0c278e01cfc51f5c8a811645ddd7f6502
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:24:30 2013 +0100
+
+    Ensure invalidation for item where mark was deleted.
+
+commit bda24a416faf4f304c456d57ffef7592322ee3b3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:17:00 2013 +0100
+
+    Fix clearing some flags on updating view in MarksManager.
+
+commit 3f51fc4a60ea7ac817e058f46e558d5094594708
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 15:16:22 2013 +0100
+
+    Always invalidate master frame while deleteing notes.
+
+commit d109550e9f025202bb62fc63533ac76083f22ea9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 13:44:37 2013 +0100
+
+    Add regionsChanged for better refresh of view content after undoing
+    changes in notes.
+
+commit 688eb935c6b759f8c7d4fa5321c2df957318d170
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 12:19:27 2013 +0100
+
+    Convert PageItem_NoteFrame::deleteIt to private with public
+    getter/setter.
+
+commit 0f60c4d7066d83b433c82f7ad252b5c383e6f0af
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Nov 8 12:12:55 2013 +0100
+
+    Remove unnecessary call of removeNoteFrame and refactoring name to
+    removeNoteFrameFromMap
+
 commit 8c71bd7dd2863fb7e5ba0c0af2a6f73704639369
 Author: Cezary ECE Grabski <cezaryece@gmail.com>
 Date:   Fri Nov 8 00:01:43 2013 +0100
 
     Fix for crash on deleting whole notesFrame.
+
+commit e2db43f60a4a0acd9411b5f5649fd029da1fe39e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 15:59:02 2013 +0100
+
+    Fix previous commit
+
+commit e6c254267bdcb25cf1dfec523b78487e4a4999bf
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 15:58:19 2013 +0100
+
+    Fix crash after deleting noteFrame.
+
+commit ca9c117c102f8b54ba14993adf28a644f3a1f85c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Nov 7 15:25:48 2013 +0100
+
+    Fix for update numbers of notes.
+
+commit 008e09f757b70566bb15a1b81382b01c24224e35
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 6 16:00:40 2013 +0100
+
+    Update of labels of notes marks.
+
+commit 33ba3ec25469501cbae8b22ef9900bb4e82b80fc
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 6 15:50:40 2013 +0100
+
+    Further work on fixing deleting marks, specially notes marks. Some
+    refactoring of mark data representation and access to it.
+
+commit 71632d6523c0a2284b0eacfd398c4a39ebb9473c
+Merge: dcf7369 c28253c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Nov 6 07:44:18 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit dcf736971c79fac4ec071b8dd112b7f52e09eb71
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 15:33:20 2013 +0100
+
+    Refactoring all data in Mark class as protected with public
+    setters/getters.
+
+commit f21a8744c9f269e6bab8de3523b76b74f937baa6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 13:27:13 2013 +0100
+
+    Fix for placing cursor after note recall in noteframe. Fix for undo
+    deleting list marks.
+
+commit 3a639df05c927e69719578fbff8c4af43a5b78a2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 12:07:21 2013 +0100
+
+    Fix for undo deleting text with marks. Refactoring code for undo marks,
+    remove of unused already ScItemsState class.
+
+commit 2d536cde94034491982f262e466a9a1a821ad2c9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:43:07 2013 +0100
+
+    In undo state save item name from getUName()
+
+commit ef1e4dd012e5c875d6e971c7204e587a37e15e72
+Merge: 5a37575 379e702
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:13:56 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 5a3757559f7448dfebd00a9b5acdf12f472345e9
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:11:37 2013 +0100
+
+    Refacotirn some names in Mark class for better understanding of its
+    role.
+
+commit aeb97d550c0e8abc14cb2bb62d1744d184c797d0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Nov 4 08:10:08 2013 +0100
+
+    Changing action od dblclick on mark in Marks Manager - for unique marks
+    go to it, for non-unique edit it.
+
+commit 9bd74bc391494624a57cf4f1025ba85d21395db8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 29 15:56:32 2013 +0100
+
+    Try to fix undo for inserting, copying marks.
+
+commit befdf70bae84583b4f32897a3e654ca2d04878a6
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 29 09:38:15 2013 +0100
+
+    Fix for copying with text also a character styles assigned to marks
+    (BTW to other special chars too, like for page numbers)
+
+commit 28d6ffb6683e03a050a35fe7e591e579e5e904b2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 28 15:37:02 2013 +0100
+
+    Fix for adjusting size of Paragraph Effects tab while it change its
+    content.
+
+commit 2a2430fe16a4dab6b7e2b426a014d2dbc3b446c0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 28 14:41:05 2013 +0100
+
+    Fix for marks - save character style for mark in text. Font selected in
+    Character Palette is used as bullet font.
+
+commit 46692250f119cdc3f8f7fc3f5002ee437008a54b
+Merge: abdd2e4 f7c0714
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 28 08:55:41 2013 +0100
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
 
 commit abdd2e48bbf81556901f038ba55cfde23315d8f8
 Author: Cezary ECE Grabski <cezaryece@gmail.com>
@@ -24,3 +276,275 @@ Date:   Sat Oct 26 19:32:23 2013 +0200
 
     Fix for resolving page number in cross references in format according to
     section numbering setting.
+
+commit 0daa9e64a733cbbf5d0b93b760fca6b5f25382c8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 14:29:01 2013 +0200
+
+    Fix unfinished code - SotryText::findParagraphEnd function
+
+commit 7560d6246dad1f9f5053962520f565eb8e8674ba
+Merge: a3750e8 7c9d938
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 13:37:08 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit a3750e8a4e8a4ea7d741c640e3a0aa09b677d083
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 13:36:18 2013 +0200
+
+    Fix undo/redo for deleting text - deleting notes, deleting text with
+    numbered or bulleted list, restore paragraphStyle
+
+commit 0f387b05dcf881931a6a6422e26808c8017cb3a1
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 13:33:49 2013 +0200
+
+    Better calculate changed region after NoteFrame layout.
+
+commit 138b9ab682d861964f76b21f07da5fe5be8c4fd0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 25 07:58:04 2013 +0200
+
+    Dont create undo state for moving items welded to given. Dont commit
+    empty transaction on moving welded items.
+
+commit c6d3759bc185fc25be6b44b7a6a703aa9f7af551
+Merge: 2c832b4 68f781f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 15:10:19 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 2c832b4a9a7e86a3aa2a4f26b0b26d21347e0833
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 14:52:25 2013 +0200
+
+    Another fix on checking text interactions with notesFrames and update
+    linked frames.
+
+commit e9b301eead4e21821dba22dbdbc78c6ca261516f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 14:15:47 2013 +0200
+
+    Fix deleting notesframes with master frame, with fix of update of linked
+    frames after deleting one.
+
+commit f6bbd196052ee73c6a4b964b26a46ae599f769b5
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:36:03 2013 +0200
+
+    Fix for removing marks for lists from text. Refactoring some names.
+
+commit b59ba9c1640f17f9b5c4e85c2a231ac6927974e3
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:34:54 2013 +0200
+
+    Assertion on setting marks pointer to null in TextNote class object.
+
+commit 5ce9f1e0ebf85badbbc97f346dca9a4bda42197c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:33:57 2013 +0200
+
+    Dont weld autodeleted notes frames. Dont save undo if welding for them.
+
+commit 0e1a74f69c6c3038f413ae8c7d8e5b9a8050f2fd
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:31:41 2013 +0200
+
+    Fix for removing marks on deleting frame in chain. Fix for droping
+    noteframe mark pointer in note object.
+
+commit 9c343e7730200d309daf012a909fdc3e23242630
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 24 11:30:08 2013 +0200
+
+    Updae mark OwnPage.
+
+commit 83786bc56b2456bcbaf0969bfaacc367eefcd20a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 23 14:20:25 2013 +0200
+
+    Disable DropCaps in noteframe. Fix for renumbering notes after inserting
+    new one. Further refactoring arguments in functions.
+
+commit 2790f4763b705d1b6f89a40474d9f8e45718d57a
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 23 10:14:43 2013 +0200
+
+    Change of way of passing string to desaxeStoryFromString (now by
+    reference).
+
+commit 431045e01c5f78bc7be1664e036e4762c5e11bab
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 22 15:44:01 2013 +0200
+
+    Massive reafctoring of parameters in marks and notes functions.
+
+commit 68fe057231dca5f87fb9887504e08ea2b909a1ea
+Merge: 25cb13e b232bf7
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 22 09:54:51 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/scribusdoc.cpp
+
+commit 25cb13e180be535d0ac1a43571eedb2dba949c52
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 21 08:55:04 2013 +0200
+
+    Remove textLen from TextNote as it must be calculated only in one place.
+    Refactoring names of saxing/desaxing functions in util_text.
+
+commit 491b41c71e20b37d4651ab0c44fbb9ad1e4981a5
+Author: cezaryece <cezaryece@gmail.com>
+Date:   Sat Oct 19 16:56:19 2013 +0200
+
+    fix for crash while deleting note
+
+commit 431029f30c705eece5742bdbb862a0247cf84d7e
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 18 15:46:52 2013 +0200
+
+    Enabling list in notesframes. Fix for updating numbers of notes.
+
+commit 2797c326cd289764bf2114f8a558a7accb69754f
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 18 10:01:47 2013 +0200
+
+    Fix for updating notes numbers.
+    Relayout text frame by jump not by recursive call.
+
+commit b8beb663f1eebf68a2fab6c5fdfe1153da6e4077
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 14:14:15 2013 +0200
+
+    Remove commented code, uncomment set ETA for undo of deleting note
+
+commit 3928b2da09e6de51861de441d8e7d6e7b55be92c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 14:11:36 2013 +0200
+
+    Remove unused includes.
+
+commit 72e1b756195c22e5b752422e4f943a43061979d2
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 17 13:59:01 2013 +0200
+
+    Fix preparing saxed string for Serializer.
+
+commit a09281e76b574a446c05ca00d5a2b618155a4f8c
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 16 12:30:09 2013 +0200
+
+    Small refactoring and unding code differences with svn
+
+commit ccbcd5f9dccd6fee34ee8a14655b3210c00e2fe3
+Merge: b7c9b09 e259128
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Wed Oct 16 07:32:12 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit b7c9b09dbf55cdbed8fa90bd8df22f9f4bfd0f09
+Merge: c7d31b2 a18a770
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 15 10:07:17 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit c7d31b2da2a084046cbc50ce8248baac675ddce6
+Merge: 5252212 e38f048
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 14 09:33:43 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+
+commit 525221282a6b785cf1b98733eb0700bcf6e0bcf8
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 14:48:52 2013 +0200
+
+    Fix crash on deleting marks after Avox patch making ScText private.
+    Fix for update after deleting notes.
+    BTW fix for wrong disabling undo in few places, as undo should be
+    strictly disabled and then enabled, as twice disabling undo broke its
+    state stack.
+
+commit 8146966acfb92471061bd39008a8d9f11b875fba
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 11:19:26 2013 +0200
+
+    Better name for PageItem_TextFrame::selectedNoteMark - refactoring to
+    PageItem_TextFrame::noteFromSelectedNoteMark
+
+commit ea4e1a6832999a74b574b87e7c43c9259c8ca074
+Merge: 517b8e1 6727d27
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Fri Oct 11 10:32:36 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit 517b8e10aa3dd27f2b69a0fc9b07713f7dc7bce8
+Merge: 66f5e35 85d0845
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 10 11:25:33 2013 +0200
+
+    Merge branch 'svn' of git://scribus.net/trunk into footnotes_fix
+    
+    Conflicts:
+    	Scribus/scribus/pageitem_noteframe.cpp
+    	Scribus/scribus/pageitem_textframe.cpp
+
+commit 66f5e35ced2c388132072841c38c70fa383c36d0
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Tue Oct 8 15:52:51 2013 +0200
+
+    further fixes
+
+commit c252d9da1d128a710171cbb9b8d2512513dc5797
+Author: cezaryece <cezaryece@gmail.com>
+Date:   Tue Oct 8 07:31:38 2013 +0200
+
+    fix for applying notes mark charstyle to next inserted char
+
+commit df4b5d8aad65d5cf9502cce970eeadf29622f95b
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Mon Oct 7 15:52:49 2013 +0200
+
+    Try to fix crashes with desaxing notes
+
+commit 336755b79ae73ebdf7fef8f1e114ecb710d9ea5d
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 13:00:20 2013 +0200
+
+    applying 11758 patch
+
+commit 6027e7e3cee54b9e137d4c03f120aea55e645c27
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 12:59:42 2013 +0200
+
+    applying 11613 patch
+
+commit fcf5b19c528f3b002570db7053d71e8536b30432
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Oct 3 10:00:40 2013 +0200
+
+    Enabling local character styling for notemarks.
+    Fix for applying suoperscript effect to notemarks.
+    Fix for update noteframe if master frame change its size.
+
+commit 53f778d4d21f4d92c562340848f5e53133c22806
+Author: cezaryece <czarek@oferuje.pl>
+Date:   Thu Dec 27 16:24:58 2012 +0100
+
+    Fix for crash with copy/delete text with footnotes marks which is not i
+    any frame (hidden in ocerloaded text)
