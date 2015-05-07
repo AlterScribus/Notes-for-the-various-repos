@@ -8,6 +8,8 @@ Some people have been wanting to work on some complex issue as RTL and indic, an
 
 Their code is generally spread all over the net on various repos. These github repo is a directory of these places and a chest to keep the codes for future reference and use by other devs.
 
+alterscribus has sometime been puned at being "the evil twin of scribus, the dark side of failed atempts and lack of cooperation, and the helping hand of ghost devs toward new coming devs"...
+
 #### Other works worth knowing ####
 
 
