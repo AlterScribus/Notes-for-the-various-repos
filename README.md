@@ -11,5 +11,5 @@ Their code is generally spread all over the net on various repos. These github r
 #### Other works worth knowing ####
 
 
-- [scribus, bidi, and arabic shaping](http://dev.hasenj.org/tagged/scribus)
+- [scribus, bidi, and arabic shaping](http://dev.hasenj.org/tagged/scribus) by [Hasen el Judy](https://plus.google.com/u/0/b/109612024486187515483/110834029052122052103/about)
 - [ale's projects](https://github.com/aoloe) on github 
